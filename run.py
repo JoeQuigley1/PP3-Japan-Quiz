@@ -22,13 +22,13 @@ or view the scoreboard
 
 def player_username():
     """
-    ets the player to input a username
+    Gets the player to input a username
     """
     print("Please enter a username.")
     print("The username should be at least 3 letters.\n")
-    print("Example:  Ken")
+    print("Example:  Ken \n")
 
-    username_str = input("Enter your username here: \n")
+    username_str = input("Enter your username here: ")
     print(f"The username provided is {username_str}")
 
 player_username()
