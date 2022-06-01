@@ -24,11 +24,12 @@ def get_player_username():
     Gets the player to input a username
     """
     print("Please enter a username.")
-    print("The username should be at least 3 letters.\n")
+    print("The username should consist of between 3 and 6 characters.\n")
     print("Example:  Ken \n")
 
     player_username = input("Enter your username here: ")
     check_username(player_username)
+    print(player_username)
 
     
 def check_username(values):
@@ -41,10 +42,12 @@ def check_username(values):
             raise ValueError(
                 f"Username is too short! \nYour username only has {len(values)} character(s)"
             )
+        if len(values) > 6:
+            raise ValueError(
+                f"Username is too long! \nYour username has {len(values)} characters"
+            )
     except ValueError as e:
         print(f"Invalid data: {e}. Please try again! \n")
         
-
-
 
 get_player_username()
