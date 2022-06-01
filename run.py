@@ -13,8 +13,22 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('pp3-quiz')
 
-scoreboard = SHEET.worksheet('scoreboard')
 
-data = scoreboard.get_all_values()
+# def game_menu():
+"""
+Give the user options to initiate the game, quit 
+or view the scoreboard
+"""
 
-print(data)
+def player_username():
+    """
+    ets the player to input a username
+    """
+    print("Please enter a username.")
+    print("The username should be at least 3 letters.\n")
+    print("Example:  Ken")
+
+    username_str = input("Enter your username here: \n")
+    print(f"The username provided is {username_str}")
+
+player_username()
