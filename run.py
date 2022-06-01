@@ -1,4 +1,3 @@
-
 import gspread
 from google.oauth2.service_account import Credentials
 
@@ -20,7 +19,7 @@ Give the user options to initiate the game, quit
 or view the scoreboard
 """
 
-def player_username():
+def get_player_username():
     """
     Gets the player to input a username
     """
@@ -28,7 +27,24 @@ def player_username():
     print("The username should be at least 3 letters.\n")
     print("Example:  Ken \n")
 
-    username_str = input("Enter your username here: ")
-    print(f"The username provided is {username_str}")
+    player_username = input("Enter your username here: ")
+    check_username(player_username)
 
-player_username()
+    
+def check_username(values):
+    """
+    Using try, checks the length and type of username to ensure that a
+    valid username is chosen.
+    """
+    try:
+        if len(values) < 3:
+            raise ValueError(
+                f"Username is too short! \nYour username only has {len(values)} character(s)"
+            )
+    except ValueError as e:
+        print(f"Invalid data: {e}. Please try again! \n")
+        
+
+
+
+get_player_username()
