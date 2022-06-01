@@ -23,13 +23,17 @@ def get_player_username():
     """
     Gets the player to input a username
     """
-    print("Please enter a username.")
-    print("The username should consist of between 3 and 6 characters.\n")
-    print("Example:  Ken \n")
+    while True:
+        print("Please enter a username.")
+        print("The username should consist of between 3 and 6 characters.\n")
+        print("Example:  Ken \n")
 
-    player_username = input("Enter your username here: ")
-    check_username(player_username)
-    print(player_username)
+        player_username = input("Enter your username here: ")
+        
+
+        if check_username(player_username):
+            print("Data Valid")
+            break
 
     
 def check_username(values):
@@ -48,6 +52,8 @@ def check_username(values):
             )
     except ValueError as e:
         print(f"Invalid data: {e}. Please try again! \n")
-        
+        return False
+
+    return True
 
 get_player_username()
