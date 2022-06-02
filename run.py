@@ -32,7 +32,7 @@ def game_menu():
 
     if option == "1":
         print("Great let's play!\n")
-        quiz.start_quiz()
+        get_player_username()
     elif option == "2":
         print("Let's take a look at the scoreboard \n")
         display_scoreboard()
@@ -59,7 +59,9 @@ def get_player_username():
             print("Data Valid")
             update_scoreboard(player_username)
             break
+    quiz.start_quiz()
     check_username(player_username)
+    
     
     
 
@@ -103,7 +105,7 @@ def quit_game():
     """
     Gives the user an option to exit the game menu
     """
-    print("Thanks for using my quiz. \n")
+    print("\nThanks for using my quiz. \n")
     print("Please come back and try again soon!")
 
 
