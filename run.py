@@ -1,5 +1,6 @@
 import gspread
 from google.oauth2.service_account import Credentials
+from pprint import pprint
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -13,11 +14,26 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('pp3-quiz')
 
 
-# def game_menu():
-"""
-Give the user options to initiate the game, quit 
-or view the scoreboard
-"""
+def game_menu():
+    """
+    Give the user options to initiate the game, quit 
+    or view the scoreboard
+    """
+    print("Welcome to my Japan Quiz")
+    print("Please enter one of the following options: \n")
+
+    option = input("Please enter you choice here: ")
+
+    if option == "1":
+        print("Great let's play!\n")
+    elif option == "2":
+        print("Let's looks at the scoreboard")
+        display_scoreboard()
+    # Quit option to be inserted here.
+    else:
+        print("Invalid choice. Please choose 1, 2 or 3")
+        return game_menu()
+
 
 def get_player_username():
     """
@@ -74,5 +90,5 @@ def display_scoreboard():
     scoreboard_worksheet_display = SHEET.worksheet("scoreboard").get_all_values()
     print(scoreboard_worksheet_display)
 
-get_player_username()
-display_scoreboard()
+
+game_menu()
