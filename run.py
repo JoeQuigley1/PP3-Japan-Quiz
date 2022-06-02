@@ -14,6 +14,7 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('pp3-quiz')
 
 
+
 def game_menu():
     """
     Give the user options to initiate the game, quit 
@@ -71,7 +72,7 @@ def check_username(values):
             raise ValueError(
                 f"Username is too short! \nYour username only has {len(values)} character(s)"
             )
-        if len(values) > 6:
+        if len(values) > 8:
             raise ValueError(
                 f"Username is too long! \nYour username has {len(values)} characters"
             )
@@ -93,7 +94,7 @@ def update_scoreboard(player_username):
 
 def display_scoreboard():
     scoreboard_worksheet_display = SHEET.worksheet("scoreboard").get_all_values()
-    print(scoreboard_worksheet_display)
+    pprint(scoreboard_worksheet_display)
 
 
 def quit_game():
