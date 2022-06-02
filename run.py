@@ -22,14 +22,19 @@ def game_menu():
     print("Welcome to my Japan Quiz")
     print("Please enter one of the following options: \n")
 
+    # Options for the user to choose from.
+    print("If you want to play the game, press: 1")
+    print("If you want to view the scoreboard, press: 2")
+    print("If you want to quit, press: 3 \n")
     option = input("Please enter you choice here: ")
 
     if option == "1":
         print("Great let's play!\n")
     elif option == "2":
-        print("Let's looks at the scoreboard")
+        print("Let's take a look at the scoreboard \n")
         display_scoreboard()
-    # Quit option to be inserted here.
+    elif option == "3":
+        quit_game()
     else:
         print("Invalid choice. Please choose 1, 2 or 3")
         return game_menu()
@@ -89,6 +94,14 @@ def update_scoreboard(player_username):
 def display_scoreboard():
     scoreboard_worksheet_display = SHEET.worksheet("scoreboard").get_all_values()
     print(scoreboard_worksheet_display)
+
+
+def quit_game():
+    """
+    Gives the user an option to exit the game menu
+    """
+    print("Thanks for using my quiz. \n")
+    print("Please come back and try again soon!")
 
 
 game_menu()
