@@ -39,6 +39,5 @@ def start_quiz():
     print("Tokyo Metropolis is a large metropolitan area that is made up of 23 cities (called ku in Japanese) in central Tokyo")
     print("and a futher 26 cities (referred to a shi in Japanese) outside of central Tokyo")
 
-start_quiz()
 
 

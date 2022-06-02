@@ -1,6 +1,7 @@
 import gspread
 from google.oauth2.service_account import Credentials
 from pprint import pprint
+import quiz
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -31,6 +32,7 @@ def game_menu():
 
     if option == "1":
         print("Great let's play!\n")
+        quiz.start_quiz()
     elif option == "2":
         print("Let's take a look at the scoreboard \n")
         display_scoreboard()
@@ -105,4 +107,10 @@ def quit_game():
     print("Please come back and try again soon!")
 
 
-game_menu()
+
+
+def main():
+    game_menu()
+
+
+main()
