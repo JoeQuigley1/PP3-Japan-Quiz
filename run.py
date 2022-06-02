@@ -90,9 +90,10 @@ def update_scoreboard(player_username):
     """
     Update the scoreboard with the username and score
     """
+    score = quiz.start_quiz()
     print("Logging username...")
     scoreboard_worksheet_update = SHEET.worksheet("scoreboard")
-    scoreboard_worksheet_update.append_row([player_username])
+    scoreboard_worksheet_update.append_row([player_username, score])
     
     print("Username successfully updated. \n")
 

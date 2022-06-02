@@ -60,4 +60,6 @@ def start_quiz():
         else:
             print(f"Invalid data: {answer1}. Please try again! \n" )
     print(f"Answer: 126 million \nYour score: {score}/10 \n")
-    
+
+
+        return score
