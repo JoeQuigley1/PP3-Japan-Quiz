@@ -33,7 +33,11 @@ def get_player_username():
 
         if check_username(player_username):
             print("Data Valid")
+            update_scoreboard(player_username)
             break
+    check_username(player_username)
+    
+    
 
     
 def check_username(values):
@@ -55,5 +59,15 @@ def check_username(values):
         return False
 
     return True
+
+def update_scoreboard(player_username):
+    """
+    Update the scoreboard with the username and score
+    """
+    print("Logging username...")
+    scoreboard_worksheet = SHEET.worksheet("scoreboard")
+    scoreboard_worksheet.append_row([player_username])
+    
+    print("Username successfully updated. \n")
 
 get_player_username()
