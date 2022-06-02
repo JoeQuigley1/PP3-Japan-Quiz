@@ -65,9 +65,14 @@ def update_scoreboard(player_username):
     Update the scoreboard with the username and score
     """
     print("Logging username...")
-    scoreboard_worksheet = SHEET.worksheet("scoreboard")
-    scoreboard_worksheet.append_row([player_username])
+    scoreboard_worksheet_update = SHEET.worksheet("scoreboard")
+    scoreboard_worksheet_update.append_row([player_username])
     
     print("Username successfully updated. \n")
 
+def display_scoreboard():
+    scoreboard_worksheet_display = SHEET.worksheet("scoreboard").get_all_values()
+    print(scoreboard_worksheet_display)
+
 get_player_username()
+display_scoreboard()
