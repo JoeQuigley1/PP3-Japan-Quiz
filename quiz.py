@@ -44,13 +44,13 @@ def start_quiz():
         print("What is the population of Japan? \n")
         print("A: 126 million, B: 94 million, C: 77 million ")
 
-        answer1 = input("Please answer here: ")
+        answer2 = input("Please answer here: ")
 
-        if answer1.upper() ==  "A" or answer1.upper() == "126 million":
+        if answer1.upper() ==  "A" or answer2.upper() == "126 million":
             print( "\nYou got the right answer! Well done!\n\n")
             score += 1
             break
-        elif answer1.upper() == "B" or answer1.upper() == "C":
+        elif answer2.upper() == "B" or answer2.upper() == "C":
             print("\nIncorrect answer!\n\n")
             break
         #Need to find a way to get this to work
@@ -60,6 +60,30 @@ def start_quiz():
         else:
             print(f"Invalid data: {answer1}. Please try again! \n" )
     print(f"Answer: 126 million \nYour score: {score}/10 \n")
+    print("loremupsumloremupsumloremupsumloremupsum")
+    print("oremupsumloremupsumloremupsum")
+
+
+
+    #Question 3
+    while True:
+        print("In Japan it is rude to make noise when eating.")
+        print("Please answer T for True or F for False")
+
+        answer3 = input("Please answer here: ")
+
+        if answer3.upper() == "T":
+            print("\nYou got the right answer! Well done!\n\n")
+            score += 1
+            break
+        elif answer3.upper == "F":
+            print("\nIncorrect answer!\n\n")
+            break
+        else:
+            print(f"Invalid data: {answer1}. Please try again! \n")
+    print(f"Answer: True \n Your score: {score}/10 \n")
+    print("loremupsumloremupsumloremupsumloremupsum")
+    print("oremupsumloremupsumloremupsum")
 
 
         return score
