@@ -28,9 +28,9 @@ def start_quiz():
 
         if answer1.upper() ==  "B" or answer1.capitalize() == "Tokyo":
             print( "\nYou got the right answer! Well done!\n\n")
-            score += 1
+            score += 1 
             break
-        elif answer1.upper() == "A" or answer1.upper() == "C":
+        elif answer1.upper() == "A" or answer1.upper() == "C" or answer1.capitalize() == "Beijing" or answer1.capitalize() == "Seoul":
             print("\nIncorrect answer!\n\n")
             break
         else:
@@ -46,11 +46,11 @@ def start_quiz():
 
         answer2 = input("Please answer here: ")
 
-        if answer1.upper() ==  "A" or answer2.upper() == "126 million":
+        if answer2.upper() ==  "A" or answer2 == "126 million":
             print( "\nYou got the right answer! Well done!\n\n")
             score += 1
             break
-        elif answer2.upper() == "B" or answer2.upper() == "C":
+        elif answer2.upper() == "B" or answer2.upper() == "C" or answer2 == "94 million" or answer2 == "77 million":
             print("\nIncorrect answer!\n\n")
             break
         #Need to find a way to get this to work
@@ -58,7 +58,7 @@ def start_quiz():
             print("\nIncorrect answer!\n\n")
             break
         else:
-            print(f"Invalid data: {answer1}. Please try again! \n" )
+            print(f"Invalid data: {answer2}. Please try again! \n" )
     print(f"Answer: 126 million \nYour score: {score}/10 \n")
     print("loremupsumloremupsumloremupsumloremupsum")
     print("oremupsumloremupsumloremupsum")
@@ -72,18 +72,26 @@ def start_quiz():
 
         answer3 = input("Please answer here: ")
 
-        if answer3.upper() == "T":
+        if answer3.upper() == "F":
             print("\nYou got the right answer! Well done!\n\n")
             score += 1
             break
-        elif answer3.upper == "F":
+        elif answer3.upper() == "T":
             print("\nIncorrect answer!\n\n")
+
             break
         else:
-            print(f"Invalid data: {answer1}. Please try again! \n")
-    print(f"Answer: True \n Your score: {score}/10 \n")
+            print(f"Invalid data: {answer3}. Please try again! \n")
+    print(f"Answer: False \nYour score: {score}/10 \n")
     print("loremupsumloremupsumloremupsumloremupsum")
     print("oremupsumloremupsumloremupsum")
 
 
-        return score
+    # Question 4f
+
+
+
+        #return score
+
+
+start_quiz()
