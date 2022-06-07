@@ -27,7 +27,7 @@ def start_quiz():
         answer1 = input("Please answer here: ")
 
         if answer1.upper() ==  "B" or answer1.capitalize() == "Tokyo":
-            print( "\nYou got the right answer! Well done!\n\n")
+            print( "\nCorrect! Well done!\n\n")
             score += 1 
             break
         elif answer1.upper() == "A" or answer1.upper() == "C" or answer1.capitalize() == "Beijing" or answer1.capitalize() == "Seoul":
@@ -47,7 +47,7 @@ def start_quiz():
         answer2 = input("Please answer here: ")
 
         if answer2.upper() ==  "A" or answer2 == "126 million":
-            print( "\nYou got the right answer! Well done!\n\n")
+            print( "\nCorrect! Well done!\n\n")
             score += 1
             break
         elif answer2.upper() == "B" or answer2.upper() == "C" or answer2 == "94 million" or answer2 == "77 million":
@@ -67,30 +67,68 @@ def start_quiz():
 
     #Question 3
     while True:
-        print("In Japan it is rude to make noise when eating.")
-        print("Please answer T for True or F for False")
+        print("In Japan it is rude to slurp ramen when eating. \n")
+        print("Please answer T for True or F for False \n")
 
         answer3 = input("Please answer here: ")
 
-        if answer3.upper() == "F":
-            print("\nYou got the right answer! Well done!\n\n")
+        if answer3.upper() == "F" or answer3 == "False":
+            print("\nCorrect! Well done!\n\n")
             score += 1
             break
-        elif answer3.upper() == "T":
+        elif answer3.upper() == "T" or answer3 == "True":
             print("\nIncorrect answer!\n\n")
 
             break
         else:
             print(f"Invalid data: {answer3}. Please try again! \n")
     print(f"Answer: False \nYour score: {score}/10 \n")
+    print("\n loremupsumloremupsumloremupsumloremupsum")
+    print("oremupsumloremupsumloremupsum \n")
+
+
+    # Question 4f
+    while True:
+        print("In Japan which of these numbers are considered to be unlucky \n")
+        print("A: 100, B: 13, C: 4 \n")
+
+        answer4 = input("Please answer here: ")
+
+        if answer4.upper() == "C" or answer4 == "4":
+            print("\nCorrect! Well done!\n\n")
+            score += 1
+            break
+        elif answer4.upper() == "A" or answer4 == "100" or answer4.upper() == "B" or answer4 == "13" :
+            print("\nIncorrect answer!\n\n")
+
+            break
+        else:
+            print(f"Invalid data: {answer4}. Please try again! \n")
+    print(f"Answer: (C) 4 \nYour score: {score}/10 \n")
     print("loremupsumloremupsumloremupsumloremupsum")
     print("oremupsumloremupsumloremupsum")
 
 
-    # Question 4f
+    # Question 5
+    while True:
+        print("Which of the following meals do people eat for Christmas in Japan")
+        print("A: Stinky Tofu, B: Tuna Sushi, C: KFC Chicken")
 
+        answer5 = input("Please answer here: ")
 
+        if answer5.upper() == "C" or answer5 == "KFC Chicken":
+            print("\nCorrect! Well done!\n\n")
+            score += 1
+            break
+        elif answer5.upper() == "A" or answer5 == "Stinky Tofu" or answer5.upper() == "B" or answer5 == "Tuna Sushi" :
+            print("\nIncorrect answer!\n\n")
 
+            break
+        else:
+            print(f"Invalid data: {answer5}. Please try again! \n")
+    print(f"Answer: (C) KFC Chicken \nYour score: {score}/10 \n")
+    print("loremupsumloremupsumloremupsumloremupsum")
+    print("oremupsumloremupsumloremupsum")
         #return score
 
 
