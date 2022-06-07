@@ -24,3 +24,9 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
 
 -----
 Happy coding!
+
+
+
+# credits 
+https://www.rickshawtravel.co.uk/blog/10-fun-facts-japan/ Facts about Japan
+https://www.buzzfeed.com/eviecarrick/cool-facts-about-japan

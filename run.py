@@ -110,7 +110,8 @@ def quit_game():
     print("Please come back and try again soon!")
 
 
-
+# Add a percentage at the end scoreboard
+# Ask people to rate the quiz.
 
 def main():
     game_menu()

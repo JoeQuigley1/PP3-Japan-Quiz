@@ -129,6 +129,28 @@ def start_quiz():
     print(f"Answer: (C) KFC Chicken \nYour score: {score}/10 \n")
     print("loremupsumloremupsumloremupsumloremupsum")
     print("oremupsumloremupsumloremupsum")
+
+
+    # Question 6
+    while True:
+        print("Japan sells more adult diapers than children's diapers.")
+        print("Please enter T for True and F for False")
+
+        answer5 = input("Please answer here: ")
+
+        if answer5.upper() == "T" or answer5 == "True":
+            print("\nCorrect! Well done!\n\n")
+            score += 1
+            break
+        elif answer5.upper() == "F" or answer5 == "False":
+            print("\nIncorrect answer!\n\n")
+
+            break
+        else:
+            print(f"Invalid data: {answer5}. Please try again! \n")
+    print(f"Answer: (T) True \nYour score: {score}/10 \n")
+    print("loremupsumloremupsumloremupsumloremupsum")
+    print("oremupsumloremupsumloremupsum")
         #return score
 
 
