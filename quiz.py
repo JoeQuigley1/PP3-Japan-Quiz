@@ -37,7 +37,7 @@ def start_quiz():
             print(f"Invalid data: {answer1}. Please try again! \n" )
     print(f"Answer: Tokyo \nYour score: {score}/10 \n")
     print("Tokyo Metropolis is a large metropolitan area that is made up of 23 cities, (called ku in Japanese) in central Tokyo")
-    print("and a futher 26 cities, (referred to a shi in Japanese) outside of central Tokyo")
+    print("and a futher 26 cities, (referred to a shi in Japanese) outside of central Tokyo \n")
 
     #Question 2
     while True:
@@ -60,31 +60,28 @@ def start_quiz():
         else:
             print(f"Invalid data: {answer2}. Please try again! \n" )
     print(f"Answer: 126 million \nYour score: {score}/10 \n")
-    print("loremupsumloremupsumloremupsumloremupsum")
-    print("oremupsumloremupsumloremupsum")
+
 
 
 
     #Question 3
     while True:
-        print("In Japan it is rude to slurp ramen when eating. \n")
+        print("In Japan it is polite to slurp when eating ramen. \n")
         print("Please answer T for True or F for False \n")
 
         answer3 = input("Please answer here: ")
 
-        if answer3.upper() == "F" or answer3 == "False":
+        if answer3.upper() == "T" or answer3 == "True":
             print("\nCorrect! Well done!\n\n")
             score += 1
             break
-        elif answer3.upper() == "T" or answer3 == "True":
+        elif answer3.upper() == "F" or answer3 == "False":
             print("\nIncorrect answer!\n\n")
 
             break
         else:
             print(f"Invalid data: {answer3}. Please try again! \n")
-    print(f"Answer: False \nYour score: {score}/10 \n")
-    print("\n loremupsumloremupsumloremupsumloremupsum")
-    print("oremupsumloremupsumloremupsum \n")
+    print(f"Answer: True \nYour score: {score}/10 \n")
 
 
     # Question 4f
@@ -105,8 +102,7 @@ def start_quiz():
         else:
             print(f"Invalid data: {answer4}. Please try again! \n")
     print(f"Answer: (C) 4 \nYour score: {score}/10 \n")
-    print("loremupsumloremupsumloremupsumloremupsum")
-    print("oremupsumloremupsumloremupsum")
+
 
 
     # Question 5
@@ -127,8 +123,6 @@ def start_quiz():
         else:
             print(f"Invalid data: {answer5}. Please try again! \n")
     print(f"Answer: (C) KFC Chicken \nYour score: {score}/10 \n")
-    print("loremupsumloremupsumloremupsumloremupsum")
-    print("oremupsumloremupsumloremupsum")
 
 
     # Question 6
@@ -136,22 +130,69 @@ def start_quiz():
         print("Japan sells more adult diapers than children's diapers.")
         print("Please enter T for True and F for False")
 
-        answer5 = input("Please answer here: ")
+        answer6 = input("Please answer here: ")
 
-        if answer5.upper() == "T" or answer5 == "True":
+        if answer6.upper() == "T" or answer6 == "True":
             print("\nCorrect! Well done!\n\n")
             score += 1
             break
-        elif answer5.upper() == "F" or answer5 == "False":
+        elif answer6.upper() == "F" or answer6 == "False":
             print("\nIncorrect answer!\n\n")
 
             break
         else:
-            print(f"Invalid data: {answer5}. Please try again! \n")
+            print(f"Invalid data: {answer6}. Please try again! \n")
     print(f"Answer: (T) True \nYour score: {score}/10 \n")
-    print("loremupsumloremupsumloremupsumloremupsum")
-    print("oremupsumloremupsumloremupsum")
-        #return score
+   
 
+    # Question 7 
+    while True:
+        print("How many islands are there in Japan?")
+        print("A: 500 B: 2500, C: 6800")
+        
+        answer7 = input("Please answer here: ")
+
+        if answer7.upper() == "C" or answer7 == "6800":
+            print("\nCorrect! Well done!\n\n")
+            score += 1
+            break
+        elif answer7.upper() == "A" or answer7 == "500" or answer7 == "B" or answer7 == "2500":
+            print("\nIncorrect answer!\n\n")
+
+            break
+        else:
+            print(f"Invalid data: {answer7}. Please try again! \n")
+    print(f"Answer: (T) True \nYour score: {score}/10 \n")
+    print("\n While it is widely known that Japan has many different prefectures with different climates, ")
+    print("not many know that Japan is actually an island nation. It is, in fact, the largest East Asian island country, and the 4th largest island nation in the world. \n \n")
+    
+
+    #Question 8 
+    while True:
+        print("How many earthquakes are there in Japan every year?")
+        print("A: 675 B: 350, C: 1500")
+
+        answer7 = input("Please answer here: ")
+
+        if answer7.upper() == "C" or answer7 == "1500":
+            print("\nCorrect! Well done!\n\n")
+            score += 1
+            break
+        elif answer7.upper() == "A" or answer7 == "675" or answer7 == "B" or answer7 == "350":
+            print("\nIncorrect answer!\n\n")
+
+            break
+        else:
+            print(f"Invalid data: {answer7}. Please try again! \n")
+    print(f"Answer: (T) True \nYour score: {score}/10 \n")
+    
+    #Qestion 9  What happens when a train is delayed in Japan?
+    # a they issue an apology on the news 
+    #b they give you a slip of paper so you dont get in trouble at work
+    #c They give you complimentary tissues 
+
+    # question 10 which of these do Japan have?
+    # a president b king c emperor
+        #return score
 
 start_quiz()
