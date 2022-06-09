@@ -59,8 +59,8 @@ def get_player_username():
             print("Data Valid")
             update_scoreboard(player_username)
             break
-    quiz.start_quiz()
     check_username(player_username)
+    quiz.start_quiz()
     
     
     
@@ -96,10 +96,12 @@ def update_scoreboard(player_username):
     scoreboard_worksheet_update.append_row([player_username, score])
     
     print("Username successfully updated. \n")
+    display_scoreboard()
 
 def display_scoreboard():
     scoreboard_worksheet_display = SHEET.worksheet("scoreboard").get_all_values()
     pprint(scoreboard_worksheet_display)
+    game_menu()
 
 
 def quit_game():

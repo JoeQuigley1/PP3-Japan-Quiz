@@ -1,4 +1,5 @@
 
+
 # This file will hold the play the quiz function and the questions
 
 
@@ -156,7 +157,7 @@ def start_quiz():
             print("\nCorrect! Well done!\n\n")
             score += 1
             break
-        elif answer7.upper() == "A" or answer7 == "500" or answer7 == "B" or answer7 == "2500":
+        elif answer7.upper() == "A" or answer7 == "500" or answer7.upper() == "B" or answer7 == "2500":
             print("\nIncorrect answer!\n\n")
 
             break
@@ -172,13 +173,13 @@ def start_quiz():
         print("How many earthquakes are there in Japan every year?")
         print("A: 675 B: 350, C: 1500")
 
-        answer7 = input("Please answer here: ")
+        answer8 = input("Please answer here: ")
 
-        if answer7.upper() == "C" or answer7 == "1500":
+        if answer8.upper() == "C" or answer8 == "1500":
             print("\nCorrect! Well done!\n\n")
             score += 1
             break
-        elif answer7.upper() == "A" or answer7 == "675" or answer7 == "B" or answer7 == "350":
+        elif answer8.upper() == "A" or answer8 == "675" or answer7.upper() == "B" or answer7 == "350":
             print("\nIncorrect answer!\n\n")
 
             break
@@ -186,13 +187,49 @@ def start_quiz():
             print(f"Invalid data: {answer7}. Please try again! \n")
     print(f"Answer: (T) True \nYour score: {score}/10 \n")
     
-    #Qestion 9  What happens when a train is delayed in Japan?
-    # a they issue an apology on the news 
-    #b they give you a slip of paper so you dont get in trouble at work
-    #c They give you complimentary tissues 
+    #Qestion 9  
+    while True:
+        print("What happens when a train is delayed in Japan?")
+        print("A:They give you a sugary snack on arrival")
+        print("B:They issue a paper slip to notify your employer")
+        print("C:They delivery complimentary tissues to your home")
 
-    # question 10 which of these do Japan have?
-    # a president b king c emperor
-        #return score
+        answer9 = input("Please answer here: ")
 
-start_quiz()
+        if answer9.upper() == "B":
+            print("\nCorrect! Well done!\n\n")
+            score += 1
+            break
+        elif answer9.upper() == "A" or answer9.upper() == "C":
+            print("\nIncorrect answer!\n\n")
+
+            break
+        else:
+            print(f"Invalid data: {answer9}. Please try again! \n")
+    print(f"Answer: (T) True \nYour score: {score}/10 \n")
+
+    # question 10
+    while True:
+        print("Which of the following is the ruler of Japan have?")
+        print("A:President")
+        print("B:Emporer")
+        print("C:King")
+
+        answer10 = input("Please answer here: ")
+
+        if answer10.upper() == "B" or answer10.capitalize() == "Emporer":
+            print("\nCorrect! Well done!\n\n")
+            score += 1
+            break
+        elif answer10.upper() == "A" or answer10.capitalize() == "President" or answer10.upper() == "C" or answer10.capitalize() == "King":
+            print("\nIncorrect answer!\n\n")
+
+            break
+        else:
+            print(f"Invalid data: {answer10}. Please try again! \n")
+    print(f"Answer: (T) True \nYour score: {score}/10 \n")
+    return score
+
+    
+
+
