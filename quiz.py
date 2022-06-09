@@ -230,6 +230,6 @@ def start_quiz():
     print(f"Answer: (T) True \nYour score: {score}/10 \n")
     return score
 
-    
+ 
 
 

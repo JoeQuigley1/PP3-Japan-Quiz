@@ -37,7 +37,9 @@ def game_menu():
         print("Let's take a look at the scoreboard \n")
         display_scoreboard()
     elif option == "3":
-        quit_game()
+        print("\nThanks for using my quiz. \n")
+        print("Please come back and try again soon!")
+        quit()
     else:
         print("Invalid choice. Please choose 1, 2 or 3")
         return game_menu()
@@ -56,8 +58,9 @@ def get_player_username():
         
 
         if check_username(player_username):
-            print("Data Valid")
+            print("Logging username...")
             update_scoreboard(player_username)
+            print("Data Valid")
             break
     check_username(player_username)
     quiz.start_quiz()
@@ -91,25 +94,18 @@ def update_scoreboard(player_username):
     Update the scoreboard with the username and score
     """
     score = quiz.start_quiz()
-    print("Logging username...")
+    print("Logging score...")
     scoreboard_worksheet_update = SHEET.worksheet("scoreboard")
     scoreboard_worksheet_update.append_row([player_username, score])
     
-    print("Username successfully updated. \n")
+    print("Scoreboard successfully updated. \n")
     display_scoreboard()
 
 def display_scoreboard():
     scoreboard_worksheet_display = SHEET.worksheet("scoreboard").get_all_values()
     pprint(scoreboard_worksheet_display)
+    print("\n \n")
     game_menu()
-
-
-def quit_game():
-    """
-    Gives the user an option to exit the game menu
-    """
-    print("\nThanks for using my quiz. \n")
-    print("Please come back and try again soon!")
 
 
 # Add a percentage at the end scoreboard
