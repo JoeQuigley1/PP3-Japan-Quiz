@@ -163,7 +163,7 @@ def start_quiz():
             break
         else:
             print(f"Invalid data: {answer7}. Please try again! \n")
-    print(f"Answer: (T) True \nYour score: {score}/10 \n")
+    print(f"Answer: (C) \nYour score: {score}/10 \n")
     print("\n While it is widely known that Japan has many different prefectures with different climates, ")
     print("not many know that Japan is actually an island nation. It is, in fact, the largest East Asian island country, and the 4th largest island nation in the world. \n \n")
     
@@ -185,7 +185,7 @@ def start_quiz():
             break
         else:
             print(f"Invalid data: {answer7}. Please try again! \n")
-    print(f"Answer: (T) True \nYour score: {score}/10 \n")
+    print(f"Answer: (C) \nYour score: {score}/10 \n")
     
     #Qestion 9  
     while True:
@@ -206,7 +206,7 @@ def start_quiz():
             break
         else:
             print(f"Invalid data: {answer9}. Please try again! \n")
-    print(f"Answer: (T) True \nYour score: {score}/10 \n")
+    print(f"Answer: (B) \nYour score: {score}/10 \n")
 
     # question 10
     while True:
@@ -227,7 +227,7 @@ def start_quiz():
             break
         else:
             print(f"Invalid data: {answer10}. Please try again! \n")
-    print(f"Answer: (T) True \nYour score: {score}/10 \n")
+    print(f"Answer: (B) \nYour score: {score}/10 \n")
     return score
 
  

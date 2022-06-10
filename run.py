@@ -63,7 +63,7 @@ def get_player_username():
             print("Data Valid")
             break
     check_username(player_username)
-    quiz.start_quiz()
+    
     
     
     
@@ -95,24 +95,36 @@ def update_scoreboard(player_username):
     """
     score = quiz.start_quiz()
     print("Logging score...")
-    scoreboard_worksheet_update = SHEET.worksheet("scoreboard")
-    scoreboard_worksheet_update.append_row([player_username, score])
+
+    scoreboard_worksheet = SHEET.worksheet("scoreboard")
+    scoreboard_worksheet.append_row([player_username, score])
     
     print("Scoreboard successfully updated. \n")
-    display_scoreboard()
+    
 
 def display_scoreboard():
     scoreboard_worksheet_display = SHEET.worksheet("scoreboard").get_all_values()
     pprint(scoreboard_worksheet_display)
     print("\n \n")
-    game_menu()
+    
+    
 
+def user_feedback():
+    print("Input feedback")
+
+    rating = input("Please eneter rating here: ")
+    print("Please share your thoughts on the quiz. (200 characters max)")
+    suggestion = input("Suggestion: ")
+    scoreboard_worksheet = SHEET.worksheet("feedback")
+    scoreboard_worksheet.append_row([rating, suggestion])
 
 # Add a percentage at the end scoreboard
 # Ask people to rate the quiz.
 
 def main():
     game_menu()
+    user_feedback()
 
+# Bug where scoreboard will go to menu before asking feedback after 
 
 main()
