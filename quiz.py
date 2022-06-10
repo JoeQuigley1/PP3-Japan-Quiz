@@ -3,16 +3,7 @@
 # This file will hold the play the quiz function and the questions
 
 
-# questions = {
-   # "What is the capital of Japan?: ": "B"
-   # "What is the population of Japan?: ":  "A"
-    #"In Japan it is rude to make noise when eating.:": "F"
-    #"How many prefecture are there in Japan?:": "C"
-    #"Which of these are NOT Japanese?:":  "C"
-    #"Japan has the most vending machines in the world.:": "T"}
-
-
-# Using a similar structure to the check_username the start_quiz function,
+# Using a similar structure to the get sales data from love sandwiches
 # gives the question and checks to see if the answer is true
 def start_quiz():
 
@@ -25,7 +16,7 @@ def start_quiz():
         print("What is the capital of Japan? \n")
         print("A: Beijing, B: Tokyo, C: Seoul")
 
-        answer1 = input("Please answer here: ")
+        answer1 = input("\nPlease answer here: ")
 
         if answer1.upper() ==  "B" or answer1.capitalize() == "Tokyo":
             print( "\nCorrect! Well done!\n\n")
@@ -42,7 +33,7 @@ def start_quiz():
 
     #Question 2
     while True:
-        print("What is the population of Japan? \n")
+        print("\nWhat is the population of Japan? \n")
         print("A: 126 million, B: 94 million, C: 77 million ")
 
         answer2 = input("Please answer here: ")
@@ -67,10 +58,10 @@ def start_quiz():
 
     #Question 3
     while True:
-        print("In Japan it is polite to slurp when eating ramen. \n")
+        print("\nIn Japan it is polite to slurp when eating ramen. \n")
         print("Please answer T for True or F for False \n")
 
-        answer3 = input("Please answer here: ")
+        answer3 = input("\nPlease answer here: ")
 
         if answer3.upper() == "T" or answer3 == "True":
             print("\nCorrect! Well done!\n\n")
@@ -87,10 +78,10 @@ def start_quiz():
 
     # Question 4f
     while True:
-        print("In Japan which of these numbers are considered to be unlucky \n")
+        print("\nIn Japan which of these numbers are considered to be unlucky \n")
         print("A: 100, B: 13, C: 4 \n")
 
-        answer4 = input("Please answer here: ")
+        answer4 = input("\nPlease answer here: ")
 
         if answer4.upper() == "C" or answer4 == "4":
             print("\nCorrect! Well done!\n\n")
@@ -108,10 +99,10 @@ def start_quiz():
 
     # Question 5
     while True:
-        print("Which of the following meals do people eat for Christmas in Japan")
-        print("A: Stinky Tofu, B: Tuna Sushi, C: KFC Chicken")
+        print("\nWhich of the following meals do people eat for Christmas in Japan")
+        print("\nA: Stinky Tofu, B: Tuna Sushi, C: KFC Chicken")
 
-        answer5 = input("Please answer here: ")
+        answer5 = input("\nPlease answer here: ")
 
         if answer5.upper() == "C" or answer5 == "KFC Chicken":
             print("\nCorrect! Well done!\n\n")
@@ -128,10 +119,10 @@ def start_quiz():
 
     # Question 6
     while True:
-        print("Japan sells more adult diapers than children's diapers.")
+        print("\nJapan sells more adult diapers than children's diapers.")
         print("Please enter T for True and F for False")
 
-        answer6 = input("Please answer here: ")
+        answer6 = input("\nPlease answer here: ")
 
         if answer6.upper() == "T" or answer6 == "True":
             print("\nCorrect! Well done!\n\n")
@@ -148,10 +139,10 @@ def start_quiz():
 
     # Question 7 
     while True:
-        print("How many islands are there in Japan?")
+        print("\nHow many islands are there in Japan?")
         print("A: 500 B: 2500, C: 6800")
         
-        answer7 = input("Please answer here: ")
+        answer7 = input("\nPlease answer here: ")
 
         if answer7.upper() == "C" or answer7 == "6800":
             print("\nCorrect! Well done!\n\n")
@@ -170,10 +161,10 @@ def start_quiz():
 
     #Question 8 
     while True:
-        print("How many earthquakes are there in Japan every year?")
+        print("\nHow many earthquakes are there in Japan every year?")
         print("A: 675 B: 350, C: 1500")
 
-        answer8 = input("Please answer here: ")
+        answer8 = input("\nPlease answer here: ")
 
         if answer8.upper() == "C" or answer8 == "1500":
             print("\nCorrect! Well done!\n\n")
@@ -189,12 +180,12 @@ def start_quiz():
     
     #Qestion 9  
     while True:
-        print("What happens when a train is delayed in Japan?")
+        print("\nWhat happens when a train is delayed in Japan?")
         print("A:They give you a sugary snack on arrival")
         print("B:They issue a paper slip to notify your employer")
         print("C:They delivery complimentary tissues to your home")
 
-        answer9 = input("Please answer here: ")
+        answer9 = input("\nPlease answer here: ")
 
         if answer9.upper() == "B":
             print("\nCorrect! Well done!\n\n")
@@ -210,12 +201,12 @@ def start_quiz():
 
     # question 10
     while True:
-        print("Which of the following is the ruler of Japan have?")
+        print("\nWhich of the following is the ruler of Japan have?")
         print("A:President")
         print("B:Emporer")
         print("C:King")
 
-        answer10 = input("Please answer here: ")
+        answer10 = input("\nPlease answer here: ")
 
         if answer10.upper() == "B" or answer10.capitalize() == "Emporer":
             print("\nCorrect! Well done!\n\n")
@@ -230,6 +221,5 @@ def start_quiz():
     print(f"Answer: (B) \nYour score: {score}/10 \n")
     return score
 
- 
 
 

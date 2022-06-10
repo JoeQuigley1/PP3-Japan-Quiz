@@ -21,9 +21,6 @@ def game_menu():
     Give the user options to initiate the game, quit 
     or view the scoreboard
     """
-    print("Welcome to my Japan Quiz")
-    print("Please enter one of the following options: \n")
-
     # Options for the user to choose from.
     print("If you want to play the game, press: 1")
     print("If you want to view the scoreboard, press: 2")
@@ -60,7 +57,6 @@ def get_player_username():
         if check_username(player_username):
             print("Logging username...")
             update_scoreboard(player_username)
-            print("Data Valid")
             break
     check_username(player_username)
     
@@ -84,7 +80,6 @@ def check_username(values):
         return False
 
     return True
-
 def update_scoreboard(player_username):
     """
     Update the scoreboard with the username and score
@@ -107,7 +102,7 @@ def display_scoreboard():
     print("\n \n")
     game_menu()
 
-def end_game_scoreboad():
+def end_game_scoreboard():
     """
     Displays the scoreboard after the user has played
     """
@@ -123,12 +118,12 @@ def end_game_menu():
     Gives the user a different menu than the pregame menu
     """
     print("Thank you for playing \n")
-    print("Please chose from the options below")
-    print("1:Give some feedback ")
-    print("2:View the scoreboard")
-    print("3:Quit the game!")
+    print("Please chose from the options below\n")
+    print("1: Give some feedback ")
+    print("2: View the scoreboard") #probably dont need this * replace with a restart?
+    print("3: Quit the game!")
 
-    choice = input("Please type here: ")
+    choice = input("\nPlease type here: ")
     
     if choice == "1":
         user_feedback()
@@ -145,26 +140,31 @@ def user_feedback():
     """
     Takes and stores the user rating and any feedback in a google sheet
     """
-    print("Please first rate the quiz out of 10")
-    print("Then if you have sugestions to improve the quiz please leave a comment.")
+    print("\nGreat! Feedback is always important!\n")
+    print("\nPlease rate the quiz out of 10")
+    rating = input("\nRating: ") #This can only take integers
 
-    rating = input("Please eneter rating here: ")
-    print("Please share your thoughts on the quiz. (200 characters max)")
-    suggestion = input("Suggestion: ")
+    print("\nPlease share your thoughts on the quiz. (200 characters max)")
+    suggestion = input("\nSuggestion: ")
     scoreboard_worksheet = SHEET.worksheet("feedback")
     scoreboard_worksheet.append_row([rating, suggestion])
 
-    print("Thanks for rating my quiz, I hope you enjoyed! \n \n")
+    print("\nThanks for rating my quiz, I hope you enjoyed! \n \n")
 
 # Add a percentage at the end scoreboard
-# Ask people to rate the quiz.
+
 
 def main():
     game_menu()
-    end_game_scoreboad()
+    end_game_scoreboard()
     end_game_menu()
     
 
+#BUGs
 # Bug where scoreboard will go to menu before asking feedback after 
+# What happens when there are too many scores in the scoreboard
+
+print("Welcome to my Japan Quiz")
+print("Please enter one of the following options: \n")
 
 main()
