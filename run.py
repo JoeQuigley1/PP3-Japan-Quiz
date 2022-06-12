@@ -140,10 +140,23 @@ def user_feedback():
     """
     Takes and stores the user rating and any feedback in a google sheet
     """
+    while True:
+        rating = input("\nRating: ")
+        try:
+            user_rating = int(rating) 
+        except ValueError:
+            print("please enter a number")
+            continue
+        if 1 <= user_rating <= 10:
+            print("Thanks for rating")
+            break
+        print("Please use a number between 1-10")
+
+    
     print("\nGreat! Feedback is always important!\n")
     print("\nPlease rate the quiz out of 10")
-    rating = input("\nRating: ") #This can only take integers
-
+    
+    
     print("\nPlease share your thoughts on the quiz. (200 characters max)")
     suggestion = input("\nSuggestion: ")
     scoreboard_worksheet = SHEET.worksheet("feedback")
@@ -167,4 +180,4 @@ def main():
 print("Welcome to my Japan Quiz")
 print("Please enter one of the following options: \n")
 
-main()
+user_feedback()
