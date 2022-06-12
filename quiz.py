@@ -170,12 +170,11 @@ def start_quiz():
             print("\nCorrect! Well done!\n\n")
             score += 1
             break
-        elif answer8.upper() == "A" or answer8 == "675" or answer7.upper() == "B" or answer7 == "350":
+        elif answer8.upper() == "A" or answer8 == "675" or answer8.upper() == "B" or answer8 == "350":
             print("\nIncorrect answer!\n\n")
-
             break
         else:
-            print(f"Invalid data: {answer7}. Please try again! \n")
+            print(f"Invalid data: {answer8}. Please try again! \n")
     print(f"Answer: (C) \nYour score: {score}/10 \n")
     
     #Qestion 9  

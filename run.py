@@ -135,7 +135,6 @@ def end_game_menu():
         print("Invalid choice. Please choose 1, 2 or 3")
         return end_game_menu()
 
- #need to validate the rating!
 def user_feedback():
     """
     Takes and stores the user rating and any feedback in a google sheet

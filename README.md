@@ -25,6 +25,58 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
 -----
 Happy coding!
 
+# Japan Quiz
+
+
+
+# The Goal for this project
+
+# UX
+
+## User Goals 
++ To be amused by testing my facts and learn a variety of useful facts about Japan.
+
+## Site owner's Goals
++ To create a fun and somewhat challenging quiz.
++ To create a quiz with an intuative design.
++ To wrote code that follows best practice.
++ The code can be easily understood and adapted.
+
+## Requirements 
+
++ Easy to play and understand
++ Should work on any device.
+
+
+# Features
+
+## Game menu
+The game menu has 3 options for the user.
+1- Play the game
+2- View the scoreboard
+3- Quit
+
+### Play game 
+
+    
+# Technologies Used 
+
+## Languages 
+
++ [HTML](https://en.wikipedia.org/wiki/HTML "HTML") - Provided in the Code Institute template
++ [CSS](https://en.wikipedia.org/wiki/CSS "CSS") - Provided in the Code Institute template
++ [JavaScript](http://en.wikipedia.org/wiki/JavaScript "JavaScript") - Provided in the Code Institute template
++ [Python](https://en.wikipedia.org/wiki/Python_(programming_language) "Python")
+
+Python libraries and api used
+- [Google auth](https://google-auth.readthedocs.io/en/master/index.html)
+
+## Data storage
+
+The scoreboard which contains a username and their score is stored in Google Sheets using:
+
+- [Google Drive API](https://developers.google.com/drive/api)
+- [Google Sheet API](https://developers.google.com/sheets/api)
 
 
 # credits 
@@ -32,3 +84,5 @@ https://www.rickshawtravel.co.uk/blog/10-fun-facts-japan/ Facts about Japan
 https://www.buzzfeed.com/eviecarrick/cool-facts-about-japan
 
 https://www.geeksforgeeks.org/python-exit-commands-quit-exit-sys-exit-and-os-_exit/  Quit function
+
+https://stackoverflow.com/questions/52153215/how-do-i-define-limits-for-my-inputs-in-python rating parameters stack overflow
