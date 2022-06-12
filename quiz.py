@@ -22,7 +22,10 @@ def start_quiz():
             print( "\nCorrect! Well done!\n\n")
             score += 1 
             break
-        elif answer1.upper() == "A" or answer1.upper() == "C" or answer1.capitalize() == "Beijing" or answer1.capitalize() == "Seoul":
+        elif answer1.upper() == "A" or answer1.upper() == "C":
+            print("\nIncorrect answer!\n\n")
+            break
+        elif answer1.capitalize() == "Beijing" or answer1.capitalize() == "Seoul":
             print("\nIncorrect answer!\n\n")
             break
         else:
@@ -46,7 +49,6 @@ def start_quiz():
             print("\nIncorrect answer!\n\n")
             break
         #Need to find a way to get this to work
-        #elif answer1.upper() == "94 million" or answer1.upper() == "77 million":
             print("\nIncorrect answer!\n\n")
             break
         else:
@@ -58,7 +60,7 @@ def start_quiz():
 
     #Question 3
     while True:
-        print("\nIn Japan it is polite to slurp when eating ramen. \n")
+        print("\nAlmost half of all Japanese households have a fax machine. \n")
         print("Please answer T for True or F for False \n")
 
         answer3 = input("\nPlease answer here: ")
@@ -74,6 +76,8 @@ def start_quiz():
         else:
             print(f"Invalid data: {answer3}. Please try again! \n")
     print(f"Answer: True \nYour score: {score}/10 \n")
+    print("According to the Times, almost 100% of businesses and 45% of households in Japan still have fax machines!")
+
 
 
     # Question 4f

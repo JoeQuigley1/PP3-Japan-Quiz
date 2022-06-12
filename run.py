@@ -153,7 +153,7 @@ def user_feedback():
         print("Please use a number between 1-10")
 
     
-    print("\nGreat! Feedback is always important!\n")
+    
     print("\nPlease share your thoughts on the quiz. (200 characters max)")
 
 
@@ -164,6 +164,7 @@ def user_feedback():
             print(f"\nYour feedback was too long {suggestion_len} (200 characters max)")
             print("Please Try again")
         elif  len(suggestion) < 200:
+            print("\nFeedback is always important!\n")
             print("\nThanks for rating my quiz, I hope you enjoyed! \n \n")
             break
 
@@ -188,4 +189,4 @@ def main():
 print("Welcome to my Japan Quiz")
 print("Please enter one of the following options: \n")
 
-user_feedback()
+main()

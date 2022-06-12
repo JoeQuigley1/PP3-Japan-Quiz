@@ -27,6 +27,7 @@ Happy coding!
 
 # Japan Quiz
 
+I thought it would be interesting to do a quiz on Japan. I spent over 4 years living and working in Japan, between Tokyo and Hiroshima. It is a country that will always be special to me.
 
 
 # The Goal for this project
@@ -35,6 +36,13 @@ Happy coding!
 
 ## User Goals 
 + To be amused by testing my facts and learn a variety of useful facts about Japan.
+
+## User stories
+
++ As a user, I want to see my score and be able to compare it with others
++ As a user, I want to do a quiz that has an intuitive flow.
++ As a user, I want to learn something about Japan.
++ As a user, I want to have my knowledge tested.
 
 ## Site owner's Goals
 + To create a fun and somewhat challenging quiz.
@@ -46,17 +54,40 @@ Happy coding!
 
 + Easy to play and understand
 + Should work on any device.
++ Should use libraries/API and be deployed to a cloud-based platform. 
 
 
 # Features
 
 ## Game menu
 The game menu has 3 options for the user.
-1- Play the game
-2- View the scoreboard
-3- Quit
++ - Play the game
++ - View the scoreboard
++ - Quit
 
 ### Play game 
+ 
+ + Store a username in google sheets.
+ + Do a quiz about Japan.
+ + Cycle through 10 questions about Japan.
+
+
+ ### View the scoreboard
+
++ - Displays the scoreboard which consists of the username and score.
+
+### Quit
+
++ - This gives the user an option to leave the game.
++ - It contains a thank you message.
+
+## End Game Menu
+The end game menu has a similar menu to the Pregame menu except it offers a feedback choice.
+
+### Feedback
+ + - Give a rating out of 10 on the quiz.
+ + - Comment on the quiz with a max of 200 characters.
+
 
     
 # Technologies Used 
@@ -70,6 +101,7 @@ The game menu has 3 options for the user.
 
 Python libraries and api used
 - [Google auth](https://google-auth.readthedocs.io/en/master/index.html)
+- [Pprint](https://docs.python.org/3/library/pprint.html)
 
 ## Data storage
 
@@ -82,6 +114,7 @@ The scoreboard which contains a username and their score is stored in Google She
 # credits 
 https://www.rickshawtravel.co.uk/blog/10-fun-facts-japan/ Facts about Japan
 https://www.buzzfeed.com/eviecarrick/cool-facts-about-japan
+https://interacnetwork.com/fax-machines-in-japan-how-to-use-them/#:~:text=You%20might%20be%20thinking%2C%20%E2%80%9Cdo,won't%20let%20them%20go!
 
 https://www.geeksforgeeks.org/python-exit-commands-quit-exit-sys-exit-and-os-_exit/  Quit function
 
