@@ -140,6 +140,7 @@ def user_feedback():
     """
     Takes and stores the user rating and any feedback in a google sheet
     """
+    print("\nPlease rate the quiz out of 10")
     while True:
         rating = input("\nRating: ")
         try:
@@ -154,15 +155,23 @@ def user_feedback():
 
     
     print("\nGreat! Feedback is always important!\n")
-    print("\nPlease rate the quiz out of 10")
-    
-    
     print("\nPlease share your thoughts on the quiz. (200 characters max)")
-    suggestion = input("\nSuggestion: ")
+
+
+    while True:
+        suggestion = input("\nSuggestion: ")
+        suggestion_len = len(suggestion)
+        if len(suggestion) > 200:
+            print(f"\nYour feedback was too long {suggestion_len} (200 characters max)")
+            print("Please Try again")
+        elif  len(suggestion) < 200:
+            print("\nThanks for rating my quiz, I hope you enjoyed! \n \n")
+            break
+
     scoreboard_worksheet = SHEET.worksheet("feedback")
     scoreboard_worksheet.append_row([rating, suggestion])
 
-    print("\nThanks for rating my quiz, I hope you enjoyed! \n \n")
+    
 
 # Add a percentage at the end scoreboard
 
