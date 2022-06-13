@@ -14,9 +14,10 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('pp3-quiz')
 
+
 def game_menu():
     """
-    Give the user options to initiate the game, quit 
+    Give the user options to initiate the game, quit
     or view the scoreboard
     """
     # Options for the user to choose from.
@@ -39,6 +40,7 @@ def game_menu():
         print("Invalid choice. Please choose 1, 2 or 3")
         return game_menu()
 
+
 def get_player_username():
     """
     Gets the player to input a username
@@ -49,13 +51,13 @@ def get_player_username():
         print("Example:  Ken \n")
 
         player_username = input("Enter your username here: ")
-        
 
         if check_username(player_username):
             print("Logging username...")
             update_scoreboard(player_username)
             break
     check_username(player_username)
+
 
 def check_username(values):
     """
@@ -65,17 +67,19 @@ def check_username(values):
     try:
         if len(values) < 3:
             raise ValueError(
-                f"Username is too short! \nYour username only has {len(values)} character(s)"
+                f"Username is too short!\nYour username only has {len(values)}"
             )
         if len(values) > 8:
             raise ValueError(
-                f"Username is too long! \nYour username has {len(values)} characters"
+                f"Username is too long!\nYour username has {len(values)} chars"
             )
     except ValueError as e:
         print(f"Invalid data: {e}. Please try again! \n")
         return False
 
     return True
+
+
 def update_scoreboard(player_username):
     """
     Update the scoreboard with the username and score
@@ -83,9 +87,9 @@ def update_scoreboard(player_username):
     score = quiz.start_quiz()
     print("Logging score...")
 
-    scoreboard_worksheet = SHEET.worksheet("scoreboard")
-    scoreboard_worksheet.append_row([player_username, score])
-    
+    score_worksheet = SHEET.worksheet("scoreboard")
+    score_worksheet.append_row([player_username, score])
+
     print("Scoreboard successfully updated. \n")
 
 
@@ -93,10 +97,11 @@ def display_scoreboard():
     """
     Displays the scoreboard before the player logs a username
     """
-    scoreboard_worksheet_display = SHEET.worksheet("scoreboard").get_all_values()
-    pprint(scoreboard_worksheet_display)
+    score_worksheet_display = SHEET.worksheet("scoreboard").get_all_values()
+    pprint(score_worksheet_display)
     print("\n \n")
     game_menu()
+
 
 def end_game_scoreboard():
     """
@@ -104,11 +109,11 @@ def end_game_scoreboard():
     """
     print("Thank you for playing!")
     print("I hope you enjoyed...let's have a look at the scoreboard... \n \n")
-    scoreboard_worksheet_display = SHEET.worksheet("scoreboard").get_all_values()
-    pprint(scoreboard_worksheet_display)
+    score_worksheet_display = SHEET.worksheet("scoreboard").get_all_values()
+    pprint(score_worksheet_display)
     print("\n \n")
 
-    
+
 def end_game_menu():
     """
     Gives the user a different menu than the pregame menu
@@ -116,11 +121,11 @@ def end_game_menu():
     print("Thank you for playing \n")
     print("Please chose from the options below\n")
     print("1: Give some feedback ")
-    print("2: Replay the Quiz") 
+    print("2: Replay the Quiz")
     print("3: Quit the game!")
 
     choice = input("\nPlease type here: ")
-    
+
     if choice == "1":
         user_feedback()
     elif choice == "2":
@@ -132,6 +137,7 @@ def end_game_menu():
         print("Invalid choice. Please choose 1, 2 or 3")
         return end_game_menu()
 
+
 def user_feedback():
     """
     Takes and stores the user rating and any feedback in a google sheet
@@ -140,7 +146,7 @@ def user_feedback():
     while True:
         rating = input("\nRating: ")
         try:
-            user_rating = int(rating) 
+            user_rating = int(rating)
         except ValueError:
             print("please enter a number")
             continue
@@ -154,8 +160,8 @@ def user_feedback():
         suggestion = input("\nSuggestion: ")
         suggestion_len = len(suggestion)
         if len(suggestion) > 200:
-            print(f"\nYour feedback was too long {suggestion_len} (200 chars max)")
-            print("Please Try again")
+            print(f"\nYour feedback was too long {suggestion_len}")
+            print("Please Try again (200 chars max)")
         elif len(suggestion) < 200:
             print("\nFeedback is always important!\n")
             print("\nThanks for rating my quiz, I hope you enjoyed! \n \n")
@@ -164,15 +170,23 @@ def user_feedback():
     scoreboard_worksheet = SHEET.worksheet("feedback")
     scoreboard_worksheet.append_row([rating, suggestion])
 
+
 def main():
+    """
+    This function calls all of the necessary functions
+    to run the game
+    """
     game_menu()
     end_game_scoreboard()
     end_game_menu()
-#BUGs
-# Bug where scoreboard will go to menu before asking feedback after 
-# What happens when there are too many scores in the scoreboard
+
+#   BUGs
+#   Bug where scoreboard will go to menu before asking feedback after
+#   What happens when there are too many scores in the scoreboard
+
 
 print("Welcome to my Japan Quiz")
 print("Please enter one of the following options: \n")
+
 
 main()
