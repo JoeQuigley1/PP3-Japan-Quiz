@@ -1,4 +1,5 @@
 from pprint import pprint
+import time
 import gspread
 from google.oauth2.service_account import Credentials
 import quiz
@@ -54,6 +55,7 @@ def get_player_username():
 
         if check_username(player_username):
             print("Logging username...")
+            time.sleep(3)
             update_scoreboard(player_username)
             break
     check_username(player_username)
@@ -185,7 +187,6 @@ def main():
 #   BUGs
 #   Bug where scoreboard will go to menu before asking feedback after
 #   What happens when there are too many scores in the scoreboard
-#   blank space is ok for input! need to change!
 
 
 print("Welcome to my Japan Quiz")

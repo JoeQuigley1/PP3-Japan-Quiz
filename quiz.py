@@ -17,7 +17,7 @@ def start_quiz():
 
 #   Question 1
     while True:
-        print("What is the capital of Japan? \n")
+        print("\nWhat is the capital of Japan? \n")
         print("A: Beijing, B: Tokyo, C: Seoul")
 
         answer1 = input("\nPlease answer here: ")
@@ -175,8 +175,6 @@ def start_quiz():
     print("One third of the Japanese population is aged over 65.")
     print("This is attributed to many things such as the high standard")
     print("of living, low emigration and a declining birth rate.")
-    print("Loading next question...")
-    time.sleep(3)
 
 #   Question 7
     while True:
@@ -202,8 +200,6 @@ def start_quiz():
     print("not many know that Japan is the 4th largest island nation ")
     print("in the world. It has 4 main islands but also contains upwards of")
     print("6000 smaller islands.")
-    print("Loading next question...")
-    time.sleep(3)
 
 #   Question 8
     while True:
@@ -229,8 +225,6 @@ def start_quiz():
     print("one of the most Earthquake prone nations in the world. ")
     print("However most of the 1500 earthquakes go unnoticed as they are")
     print("too weak to be felt by the average person.")
-    print("Loading next question...")
-    time.sleep(3)
 
 #   Qestion 9
     while True:
@@ -257,8 +251,6 @@ def start_quiz():
     print("Trains are almost always on time to the minute. So much so that")
     print("When a train is delayed, you can get a train delay certificate")
     print("Which is basically a get out of jail free card with your employer.")
-    print("Loading next question...")
-    time.sleep(3)
 
 # Question 10
     while True:
@@ -286,13 +278,13 @@ def start_quiz():
     print("He is a ceremonial figurehead.")
     print("It is commonly accepted that there has been an Emporer in Japan")
     print("for more the 1500 years. All descended from one family. ")
-    print("Loading next question...")
-    time.sleep(3)
 
     def percentage(score, total_questions):
         end_percent = 100 * round(score)/round(total_questions)
-        return print(f" You got {end_percent}%")
+        return print(f" You got {end_percent}% ")
 
     percentage(score, total_questions)
     return score
 
+
+start_quiz()
