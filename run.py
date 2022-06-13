@@ -14,8 +14,6 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('pp3-quiz')
 
-
-
 def game_menu():
     """
     Give the user options to initiate the game, quit 
@@ -41,7 +39,6 @@ def game_menu():
         print("Invalid choice. Please choose 1, 2 or 3")
         return game_menu()
 
-
 def get_player_username():
     """
     Gets the player to input a username
@@ -59,8 +56,7 @@ def get_player_username():
             update_scoreboard(player_username)
             break
     check_username(player_username)
-    
-    
+
 def check_username(values):
     """
     Using try, checks the length and type of username to ensure that a
@@ -160,7 +156,7 @@ def user_feedback():
         if len(suggestion) > 200:
             print(f"\nYour feedback was too long {suggestion_len} (200 chars max)")
             print("Please Try again")
-        elif  len(suggestion) < 200:
+        elif len(suggestion) < 200:
             print("\nFeedback is always important!\n")
             print("\nThanks for rating my quiz, I hope you enjoyed! \n \n")
             break

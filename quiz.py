@@ -66,7 +66,7 @@ def start_quiz():
     print("\n\n Japan has one of the largest populations in the world.")
     print("However it is also one of the fastest declining populations.")
     print("There are many factors that contribute to this..")
-    print("most prominently being the high demograohic of elderly people. \n\n")
+    print("most prominently being the high demograohic of elderly people.\n\n")
 #   Question 3
     while True:
         print("\n\nAlmost half of all Japanese households have a fax machine.")
@@ -137,14 +137,14 @@ def start_quiz():
     print(f"Answer: (C) KFC Chicken \nYour score: {score}/10 \n")
     print("\n\nChristmas is not widely celebrated in Japan like in the West.")
     print("People go shopping and couples go out for a Christmas meal. Turkey")
-    print("which is traditionally eaten at Christmas, is difficult to source")
+    print("which is usually eaten at Christmas, is difficult to source")
     print("in Japan. For this reason KFC is an extremely popular alternative.")
     print("KFC restaurants will ONLY serve those who have booked in advance.")
-    
+
 #   Question 6
     while True:
         print("\nJapan sells more adult diapers than children's diapers.")
-        print("Please enter T for True and F for False")
+        print("\nPlease enter T for True and F for False")
 
         answer6 = input("\nPlease answer here: ")
 
@@ -154,14 +154,16 @@ def start_quiz():
             break
         elif answer6.upper() == "F" or answer6 == "False":
             print("\nIncorrect answer!\n\n")
-
             break
         else:
             print(f"Invalid data: {answer6}. Please try again! \n")
     print(f"Answer: (T) True \nYour score: {score}/10 \n")
-   
+    print("Japan has a very large ageing population.")
+    print("One third of the Japanese population is aged over 65.")
+    print("This is attributed to many things such as the high standard")
+    print("of living, low emigration and a declining birth rate.")
 
-    # Question 7 
+#   Question 7
     while True:
         print("\nHow many islands are there in Japan?")
         print("A: 500 B: 2500, C: 6800")
@@ -172,18 +174,23 @@ def start_quiz():
             print("\nCorrect! Well done!\n\n")
             score += 1
             break
-        elif answer7.upper() == "A" or answer7 == "500" or answer7.upper() == "B" or answer7 == "2500":
+        elif answer7.upper() == "A" or answer7 == "500":
             print("\nIncorrect answer!\n\n")
-
+            break
+        elif answer7.upper() == "B" or answer7 == "2500":
+            print("\nIncorrect answer!\n\n")
             break
         else:
             print(f"Invalid data: {answer7}. Please try again! \n")
     print(f"Answer: (C) \nYour score: {score}/10 \n")
-    print("\n While it is widely known that Japan has many different prefectures with different climates, ")
-    print("not many know that Japan is actually an island nation. It is, in fact, the largest East Asian island country, and the 4th largest island nation in the world. \n \n")
+    print("\n While it is widely known that Japan it a large country,")
+    print("with different climates, ")
+    print("not many know that Japan is the 4th largest island nation ")
+    print("in the world. It has 4 main islands but also contains upwards of")
+    print("6000 smaller islands.")
     
 
-    #Question 8 
+#   Question 8
     while True:
         print("\nHow many earthquakes are there in Japan every year?")
         print("A: 675 B: 350, C: 1500")
@@ -194,19 +201,26 @@ def start_quiz():
             print("\nCorrect! Well done!\n\n")
             score += 1
             break
-        elif answer8.upper() == "A" or answer8 == "675" or answer8.upper() == "B" or answer8 == "350":
+        elif answer8.upper() == "A" or answer8 == "675":
+            print("\nIncorrect answer!\n\n")
+            break
+        elif answer8.upper() == "B" or answer8 == "350":
             print("\nIncorrect answer!\n\n")
             break
         else:
             print(f"Invalid data: {answer8}. Please try again! \n")
     print(f"Answer: (C) \nYour score: {score}/10 \n")
+    print("Japan is located along the 'Pacific Ring of Fire' and is ")
+    print("one of the most Earthquake prone nations in the world. ")
+    print("However most of the 1500 earthquakes go unnoticed as they are")
+    print("too weak to be felt by the average person.")
     
-    #Qestion 9  
+#   Qestion 9
     while True:
         print("\nWhat happens when a train is delayed in Japan?")
-        print("A:They give you a sugary snack on arrival")
-        print("B:They issue a paper slip to notify your employer")
-        print("C:They delivery complimentary tissues to your home")
+        print("\nA:They give you a sugary snack on arrival")
+        print("\nB:They issue a certificate to notify your employer")
+        print("\nC:They delivery complimentary tissues to your home")
 
         answer9 = input("\nPlease answer here: ")
 
@@ -221,8 +235,13 @@ def start_quiz():
         else:
             print(f"Invalid data: {answer9}. Please try again! \n")
     print(f"Answer: (B) \nYour score: {score}/10 \n")
+    print("Punctuality is exceptionally important in all spheres of society.")
+    print("This is evident in the amazing public transport system.")
+    print("Trains are almost always on time to the minute. So much so that")
+    print("When a train is delayed, you can get a train delay certificate")
+    print("Which is basically a get out of jail free card with your employer.")
 
-    # question 10
+# Question 10
     while True:
         print("\nWhich of the following is the ruler of Japan have?")
         print("A:President")
@@ -235,14 +254,19 @@ def start_quiz():
             print("\nCorrect! Well done!\n\n")
             score += 1
             break
-        elif answer10.upper() == "A" or answer10.capitalize() == "President" or answer10.upper() == "C" or answer10.capitalize() == "King":
+        elif answer10.upper() == "A" or answer10.capitalize() == "President":
             print("\nIncorrect answer!\n\n")
-
+            break
+        elif answer10.upper() == "C" or answer10.capitalize() == "King":
+            print("\nIncorrect answer!\n\n")
             break
         else:
             print(f"Invalid data: {answer10}. Please try again! \n")
     print(f"Answer: (B) \nYour score: {score}/10 \n")
-
+    print("The Emporer of Japan is the head of the Japanese nation.")
+    print("He is a ceremonial figurehead.")
+    print("It is commonly accepted that there has been an Emporer in Japan")
+    print("for more the 1500 years. All descended from one family. ")
 
     def percentage(score, total_questions):
         end_percent = 100 * round(score)/round(total_questions)
