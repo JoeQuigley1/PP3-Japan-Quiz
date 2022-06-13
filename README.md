@@ -119,3 +119,5 @@ https://interacnetwork.com/fax-machines-in-japan-how-to-use-them/#:~:text=You%20
 https://www.geeksforgeeks.org/python-exit-commands-quit-exit-sys-exit-and-os-_exit/  Quit function
 
 https://stackoverflow.com/questions/52153215/how-do-i-define-limits-for-my-inputs-in-python rating parameters stack overflow
+
+https://stackoverflow.com/questions/5997987/is-there-an-operator-to-calculate-percentage-in-python

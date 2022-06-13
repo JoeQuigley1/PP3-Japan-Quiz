@@ -1,68 +1,76 @@
-
-
 # This file will hold the play the quiz function and the questions
 
 
 # Using a similar structure to the get sales data from love sandwiches
 # gives the question and checks to see if the answer is true
+
 def start_quiz():
+    """
+    This intiates the quiz and stores all of the
+    questions.
+    """
 
     score = 0
     total_questions = 10
 
-
-
-    #Question 1
+#   Question 1
     while True:
         print("What is the capital of Japan? \n")
         print("A: Beijing, B: Tokyo, C: Seoul")
 
         answer1 = input("\nPlease answer here: ")
 
-        if answer1.upper() ==  "B" or answer1.capitalize() == "Tokyo":
-            print( "\nCorrect! Well done!\n\n")
-            score += 1 
+        if answer1.upper() == "B" or answer1.capitalize() == "Tokyo":
+            print("\nCorrect! Well done!\n\n")
+            score += 1
             break
         elif answer1.upper() == "A" or answer1.upper() == "C":
             print("\nIncorrect answer!\n\n")
             break
-        elif answer1.capitalize() == "Beijing" or answer1.capitalize() == "Seoul":
+        elif answer1.capitalize() == "Beijing":
+            print("\nIncorrect answer!\n\n")
+            break
+        elif answer1.capitalize() == "Seoul":
             print("\nIncorrect answer!\n\n")
             break
         else:
-            print(f"Invalid data: {answer1}. Please try again! \n" )
+            print(f"Invalid data: {answer1}. Please try again! \n")
     print(f"Answer: Tokyo \nYour score: {score}/10 \n")
-    print("Tokyo Metropolis is a large metropolitan area that is made up of 23 cities, (called ku in Japanese) in central Tokyo")
-    print("and a futher 26 cities, (referred to a shi in Japanese) outside of central Tokyo \n")
+    print("\n\nTokyo Metropolis is a large metropolitan area,")
+    print("made up of 23 cities (called 'ku' in Japanese) in central Tokyo")
+    print("and a futher 26 cities, (referred to a 'shi' in Japanese)\n")
 
-    #Question 2
+#   Question 2
     while True:
         print("\nWhat is the population of Japan? \n")
         print("A: 126 million, B: 94 million, C: 77 million ")
 
-        answer2 = input("Please answer here: ")
+        answer2 = input("\nPlease answer here: ")
 
-        if answer2.upper() ==  "A" or answer2 == "126 million":
-            print( "\nCorrect! Well done!\n\n")
+        if answer2.upper() == "A" or answer2 == "126 million":
+            print("\nCorrect! Well done!\n\n")
             score += 1
             break
-        elif answer2.upper() == "B" or answer2.upper() == "C" or answer2 == "94 million" or answer2 == "77 million":
+        elif answer2.upper() == "B" or answer2.upper() == "C":
             print("\nIncorrect answer!\n\n")
             break
-        #Need to find a way to get this to work
+        elif answer2.capitalize() == "94 million":
+            print("\nIncorrect answer!\n\n")
+            break
+        elif answer2.capitalize() == "77 million":
             print("\nIncorrect answer!\n\n")
             break
         else:
-            print(f"Invalid data: {answer2}. Please try again! \n" )
+            print(f"Invalid data: {answer2}. Please try again! \n")
     print(f"Answer: 126 million \nYour score: {score}/10 \n")
-
-
-
-
-    #Question 3
+    print("\n\n Japan has one of the largest populations in the world.")
+    print("However it is also one of the fastest declining populations.")
+    print("There are many factors that contribute to this..")
+    print("most prominently being the high demograohic of elderly people. \n\n")
+#   Question 3
     while True:
-        print("\nAlmost half of all Japanese households have a fax machine. \n")
-        print("Please answer T for True or F for False \n")
+        print("\n\nAlmost half of all Japanese households have a fax machine.")
+        print("\nPlease answer T for True or F for False \n")
 
         answer3 = input("\nPlease answer here: ")
 
@@ -77,14 +85,14 @@ def start_quiz():
         else:
             print(f"Invalid data: {answer3}. Please try again! \n")
     print(f"Answer: True \nYour score: {score}/10 \n")
-    print("According to the Times, almost 100% of businesses and 45% of households in Japan still have fax machines!")
+    print("According to the Times, almost 100% of businesses and 45%")
+    print("of households in Japan still have fax machines!")
+    print("")
 
-
-
-    # Question 4f
+#   Question 4
     while True:
-        print("\nIn Japan which of these numbers are considered to be unlucky \n")
-        print("A: 100, B: 13, C: 4 \n")
+        print("\nIn Japan which of these numbers are considered to be unlucky")
+        print("\n\nA: 100, B: 13, C: 4 \n")
 
         answer4 = input("\nPlease answer here: ")
 
@@ -92,20 +100,25 @@ def start_quiz():
             print("\nCorrect! Well done!\n\n")
             score += 1
             break
-        elif answer4.upper() == "A" or answer4 == "100" or answer4.upper() == "B" or answer4 == "13" :
+        elif answer4.upper() == "A" or answer4 == "100":
             print("\nIncorrect answer!\n\n")
-
+            break
+        elif answer4.upper() == "B" or answer4 == "13":
+            print("\nIncorrect answer!\n\n")
             break
         else:
             print(f"Invalid data: {answer4}. Please try again! \n")
     print(f"Answer: (C) 4 \nYour score: {score}/10 \n")
-
-
+    print("\n\nUnlucky numbers in Japanese often derive from their readings")
+    print("The number 4 is sometimes called 'shi' which...")
+    print("also unfortunatley sounds like the word for death.\n")
+    print("Many East Asian countries share similar")
+    print("superstitions around numbers.\n\n")
 
     # Question 5
     while True:
-        print("\nWhich of the following meals do people eat for Christmas in Japan")
-        print("\nA: Stinky Tofu, B: Tuna Sushi, C: KFC Chicken")
+        print("What do Japanese people eat for Christmas?\n")
+        print("\nA: Stinky Tofu, B: California Roll, C: KFC Chicken")
 
         answer5 = input("\nPlease answer here: ")
 
@@ -113,16 +126,22 @@ def start_quiz():
             print("\nCorrect! Well done!\n\n")
             score += 1
             break
-        elif answer5.upper() == "A" or answer5 == "Stinky Tofu" or answer5.upper() == "B" or answer5 == "Tuna Sushi" :
+        elif answer5.upper() == "A" or answer5 == "Stinky Tofu":
             print("\nIncorrect answer!\n\n")
-
+            break
+        elif answer5.upper() == "B" or answer5 == "Tuna Sushi":
+            print("\nIncorrect answer!\n\n")
             break
         else:
             print(f"Invalid data: {answer5}. Please try again! \n")
     print(f"Answer: (C) KFC Chicken \nYour score: {score}/10 \n")
-
-
-    # Question 6
+    print("\n\nChristmas is not widely celebrated in Japan like in the West.")
+    print("People go shopping and couples go out for a Christmas meal. Turkey")
+    print("which is traditionally eaten at Christmas, is difficult to source")
+    print("in Japan. For this reason KFC is an extremely popular alternative.")
+    print("KFC restaurants will ONLY serve those who have booked in advance.")
+    
+#   Question 6
     while True:
         print("\nJapan sells more adult diapers than children's diapers.")
         print("Please enter T for True and F for False")

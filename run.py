@@ -153,16 +153,12 @@ def user_feedback():
             break
         print("Please use a number between 1-10")
 
-    
-    
     print("\nPlease share your thoughts on the quiz. (200 characters max)")
-
-
     while True:
         suggestion = input("\nSuggestion: ")
         suggestion_len = len(suggestion)
         if len(suggestion) > 200:
-            print(f"\nYour feedback was too long {suggestion_len} (200 characters max)")
+            print(f"\nYour feedback was too long {suggestion_len} (200 chars max)")
             print("Please Try again")
         elif  len(suggestion) < 200:
             print("\nFeedback is always important!\n")
@@ -172,17 +168,10 @@ def user_feedback():
     scoreboard_worksheet = SHEET.worksheet("feedback")
     scoreboard_worksheet.append_row([rating, suggestion])
 
-    
-
-# Add a percentage at the end scoreboard
-
-
 def main():
     game_menu()
     end_game_scoreboard()
     end_game_menu()
-    
-
 #BUGs
 # Bug where scoreboard will go to menu before asking feedback after 
 # What happens when there are too many scores in the scoreboard
