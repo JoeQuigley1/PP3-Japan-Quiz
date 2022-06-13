@@ -102,6 +102,7 @@ The end game menu has a similar menu to the Pregame menu except it offers a feed
 Python libraries and api used
 - [Google auth](https://google-auth.readthedocs.io/en/master/index.html)
 - [Pprint](https://docs.python.org/3/library/pprint.html)
+- [Time](https://www.programiz.com/python-programming/time/sleep)
 
 ## Data storage
 

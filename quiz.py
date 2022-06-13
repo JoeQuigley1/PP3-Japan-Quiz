@@ -1,3 +1,5 @@
+import time
+
 # This file will hold the play the quiz function and the questions
 
 
@@ -39,6 +41,8 @@ def start_quiz():
     print("\n\nTokyo Metropolis is a large metropolitan area,")
     print("made up of 23 cities (called 'ku' in Japanese) in central Tokyo")
     print("and a futher 26 cities, (referred to a 'shi' in Japanese)\n")
+    print("Loading next question...")
+    time.sleep(3)
 
 #   Question 2
     while True:
@@ -67,7 +71,10 @@ def start_quiz():
     print("However it is also one of the fastest declining populations.")
     print("There are many factors that contribute to this..")
     print("most prominently being the high demograohic of elderly people.\n\n")
-#   Question 3
+    print("Loading next question...")
+    time.sleep(3)
+
+#   Question 3 NOT FINISHED
     while True:
         print("\n\nAlmost half of all Japanese households have a fax machine.")
         print("\nPlease answer T for True or F for False \n")
@@ -88,6 +95,8 @@ def start_quiz():
     print("According to the Times, almost 100% of businesses and 45%")
     print("of households in Japan still have fax machines!")
     print("")
+    print("Loading next question...")
+    time.sleep(3)
 
 #   Question 4
     while True:
@@ -114,6 +123,8 @@ def start_quiz():
     print("also unfortunatley sounds like the word for death.\n")
     print("Many East Asian countries share similar")
     print("superstitions around numbers.\n\n")
+    print("Loading next question...")
+    time.sleep(3)
 
     # Question 5
     while True:
@@ -140,6 +151,8 @@ def start_quiz():
     print("which is usually eaten at Christmas, is difficult to source")
     print("in Japan. For this reason KFC is an extremely popular alternative.")
     print("KFC restaurants will ONLY serve those who have booked in advance.")
+    print("Loading next question...")
+    time.sleep(3)
 
 #   Question 6
     while True:
@@ -162,12 +175,13 @@ def start_quiz():
     print("One third of the Japanese population is aged over 65.")
     print("This is attributed to many things such as the high standard")
     print("of living, low emigration and a declining birth rate.")
+    print("Loading next question...")
+    time.sleep(3)
 
 #   Question 7
     while True:
         print("\nHow many islands are there in Japan?")
         print("A: 500 B: 2500, C: 6800")
-        
         answer7 = input("\nPlease answer here: ")
 
         if answer7.upper() == "C" or answer7 == "6800":
@@ -188,7 +202,8 @@ def start_quiz():
     print("not many know that Japan is the 4th largest island nation ")
     print("in the world. It has 4 main islands but also contains upwards of")
     print("6000 smaller islands.")
-    
+    print("Loading next question...")
+    time.sleep(3)
 
 #   Question 8
     while True:
@@ -214,7 +229,9 @@ def start_quiz():
     print("one of the most Earthquake prone nations in the world. ")
     print("However most of the 1500 earthquakes go unnoticed as they are")
     print("too weak to be felt by the average person.")
-    
+    print("Loading next question...")
+    time.sleep(3)
+
 #   Qestion 9
     while True:
         print("\nWhat happens when a train is delayed in Japan?")
@@ -240,6 +257,8 @@ def start_quiz():
     print("Trains are almost always on time to the minute. So much so that")
     print("When a train is delayed, you can get a train delay certificate")
     print("Which is basically a get out of jail free card with your employer.")
+    print("Loading next question...")
+    time.sleep(3)
 
 # Question 10
     while True:
@@ -267,11 +286,14 @@ def start_quiz():
     print("He is a ceremonial figurehead.")
     print("It is commonly accepted that there has been an Emporer in Japan")
     print("for more the 1500 years. All descended from one family. ")
+    print("Loading next question...")
+    time.sleep(3)
 
     def percentage(score, total_questions):
         end_percent = 100 * round(score)/round(total_questions)
-        return print(f" You got {end_percent}% ")
+        return print(f" You got {end_percent}%")
 
     percentage(score, total_questions)
     return score
 
+start_quiz()
