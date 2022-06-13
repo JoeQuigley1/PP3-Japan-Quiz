@@ -120,7 +120,7 @@ def end_game_menu():
     print("Thank you for playing \n")
     print("Please chose from the options below\n")
     print("1: Give some feedback ")
-    print("2: View the scoreboard") #probably dont need this * replace with a restart?
+    print("2: Replay the Quiz") 
     print("3: Quit the game!")
 
     choice = input("\nPlease type here: ")
@@ -128,7 +128,8 @@ def end_game_menu():
     if choice == "1":
         user_feedback()
     elif choice == "2":
-        end_game_scoreboard()
+        print("\nLet's Try again for fun!\n")
+        quiz.start_quiz()
     elif choice == "3":
         quit()
     else:

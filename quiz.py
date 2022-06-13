@@ -8,6 +8,7 @@
 def start_quiz():
 
     score = 0
+    total_questions = 10
 
 
 
@@ -222,7 +223,12 @@ def start_quiz():
         else:
             print(f"Invalid data: {answer10}. Please try again! \n")
     print(f"Answer: (B) \nYour score: {score}/10 \n")
+
+
+    def percentage(score, total_questions):
+        end_percent = 100 * round(score)/round(total_questions)
+        return print(f" You got {end_percent}% ")
+
+    percentage(score, total_questions)
     return score
-
-
 
