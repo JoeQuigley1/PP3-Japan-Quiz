@@ -296,4 +296,3 @@ def start_quiz():
     percentage(score, total_questions)
     return score
 
-start_quiz()
