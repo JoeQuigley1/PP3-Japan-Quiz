@@ -12,9 +12,10 @@ def quest_1():
     """
     Contains the data for question 10
     """
+    print("\nLet's go!")
     while True:
-        print("\nQ1. What is the capital of Japan?\n")
-        print("A: Beijing, B: Tokyo, C: Seoul")
+        print(colored(("\nQ1. What is the capital of Japan?\n"), 'cyan'))
+        print(colored(("A: Beijing, B: Tokyo, C: Seoul"), 'cyan'))
 
         answer1 = input("\nPlease answer here:\n")
 
@@ -34,11 +35,13 @@ def quest_1():
             break
         else:
             print(f"Invalid data: {answer1}. Please try again! \n")
-    print(colored(f"Answer: Tokyo \nYour score: {score}/10 \n"), 'blue')
+    print(colored((
+        f"Answer: Tokyo \nYour score: {score}/10 \n"), 'cyan'))
     print("\nTokyo Metropolis is a large metropolitan area,")
     print("made up of 23 cities (called 'ku' in Japanese) in central Tokyo")
     print("and a futher 26 cities, (referred to a 'shi' in Japanese)\n")
     print("Loading next question...")
+    time.sleep(5)
 
 
 def quest_2():
@@ -46,8 +49,9 @@ def quest_2():
     Contains the data for question 2
     """
     while True:
-        print("\nQ2. What is the population of Japan?")
-        print("A: 126 million, B: 94 million, C: 77 million ")
+        print(colored(("\nQ2. What is the population of Japan?"), 'cyan'))
+        print(colored((
+            "A: 126 million, B: 94 million, C: 77 million"), 'cyan'))
 
         answer2 = input("\nPlease answer here:\n")
 
@@ -67,12 +71,14 @@ def quest_2():
             break
         else:
             print(f"Invalid data: {answer2}. Please try again! \n")
-    print(f"Answer: 126 million \nYour score: {score}/10 \n")
+    print(
+        colored((f"Answer: 126 million \nYour score: {score}/10 \n"), 'cyan'))
     print("\n\nJapan has one of the largest populations in the world.")
     print("However it is also one of the fastest declining populations.")
     print("There are many factors that contribute to this..")
     print("most prominently being the high demograohic of elderly people.\n\n")
     print("Loading next question...")
+    time.sleep(5)
 
 
 def quest_3():
@@ -80,9 +86,12 @@ def quest_3():
     Contains the data for question 3
     """
     while True:
-        print("\nQ3.")
-        print("Almost half of all Japanese households have a fax machine")
-        print("\nPlease answer T for True or F for False")
+        print(colored(("\nQ3."), 'cyan'))
+        print(colored((
+            "Almost half of all Japanese households have a fax machine"), 'cyan'
+            ))
+        
+        print(colored(("\nPlease answer T for True or F for False\n"), 'cyan'))
 
         answer3 = input("Please answer here:\n")
 
@@ -97,12 +106,13 @@ def quest_3():
             break
         else:
             print(f"Invalid data: {answer3}. Please try again! \n")
-    print(f"Answer: True \nYour score: {score}/10 \n")
-    print("According to the Times, almost 100% of businesses and 45%")
+    print(colored((
+        f"Answer: True \nYour score: {score}/10 \n")))
+    print("\n\nAccording to the Times, almost 100% of businesses and 45%")
     print("of households in Japan still have fax machines!")
-    print("")
+    print("Most 7 Eleven stores also offer a fax service.\n\n")
     print("Loading next question...")
-    time.sleep(3)
+    time.sleep(5)
 
 
 def quest_4():
@@ -110,9 +120,11 @@ def quest_4():
     Contains the data for question 4
     """
     while True:
-        print("\nQ4.")
-        print("In Japan which of these numbers are considered to be unlucky")
-        print("\nA: 100, B: 13, C: 4")
+        print(colored(("\nQ4."), 'cyan'))
+        print(colored((
+            "In Japan which of these numbers are considered to be unlucky"
+            ), 'cyan'))
+        print(colored(("\nA: 100, B: 13, C: 4"), 'cyan'))
 
         answer4 = input("\nPlease answer here:\n")
 
@@ -129,14 +141,14 @@ def quest_4():
             break
         else:
             print(f"Invalid data: {answer4}. Please try again! \n")
-    print(f"Answer: (C) 4 \nYour score: {score}/10 \n")
+    print(colored((f"Answer: (C) 4 \nYour score: {score}/10 \n"), 'cyan'))
     print("\n\nUnlucky numbers in Japanese often derive from their readings")
     print("The number 4 is sometimes called 'shi' which...")
     print("also unfortunatley sounds like the word for death.\n")
     print("Many East Asian countries share similar")
     print("superstitions around numbers.\n\n")
     print("Loading next question...")
-    time.sleep(3)
+    time.sleep(5)
 
 
 def quest_5():
@@ -144,8 +156,10 @@ def quest_5():
     Contains the data for question 5
     """
     while True:
-        print("\nQ5. What do Japanese people eat for Christmas?\n")
-        print("\nA: Stinky Tofu, B: California Roll, C: KFC Chicken")
+        print(colored((
+            "\nQ5.\nWhat do Japanese people eat for Christmas?\n"), 'cyan'))
+        print(colored((
+            "A: Stinky Tofu, B: California Roll, C: KFC Chicken"), 'cyan'))
 
         answer5 = input("\nPlease answer here:\n")
 
@@ -162,14 +176,15 @@ def quest_5():
             break
         else:
             print(f"Invalid data: {answer5}. Please try again! \n")
-    print(f"Answer: (C) KFC Chicken \nYour score: {score}/10 \n")
-    print("\n\nChristmas is not widely celebrated in Japan like in the West.")
+    print(colored((
+        f"Answer: (C) KFC Chicken \nYour score: {score}/10 \n"), 'cyan'))
+    print("\n\nChristmas is not widely celebrated in Japan.")
     print("People go shopping and couples go out for a Christmas meal. Turkey")
     print("which is usually eaten at Christmas, is difficult to source")
     print("in Japan. For this reason KFC is an extremely popular alternative.")
     print("KFC restaurants will ONLY serve those who have booked in advance.")
-    print("Loading next question...")
-    time.sleep(3)
+    print("\n\nLoading next question...")
+    time.sleep(5)
 
 
 def quest_6():
@@ -177,8 +192,10 @@ def quest_6():
     Contains the data for question 6
     """
     while True:
-        print("\nQ6. Japan sells more adult diapers than children's diapers.")
-        print("\nPlease enter T for True and F for False")
+        print(colored((
+            "\nQ6.\nJapan sells more adult diapers than children's diapers."
+            ), 'cyan'))
+        print(colored(("\nPlease enter T for True and F for False"), 'cyan'))
 
         answer6 = input("\nPlease answer here:\n")
 
@@ -192,12 +209,16 @@ def quest_6():
             break
         else:
             print(f"Invalid data: {answer6}. Please try again! \n")
-    print(f"Answer: (T) True \nYour score: {score}/10 \n")
-    print("Japan has a very large ageing population.")
+    print(colored((
+        f"Answer: (T) True \nYour score: {score}/10 \n"
+    ), 'cyan'))
+    print("\n\nOne of the reasons is that Japan")
+    print("has a very large ageing population.")
     print("One third of the Japanese population is aged over 65.")
-    print("This is attributed to many things such as the high standard")
-    print("of living, low emigration and a declining birth rate.")
-    time.sleep(3)
+    print("Japan is not alone in this trend as many countries like")
+    print("China, India and Italy are using more and more adult diapers.\n\n")
+    print("Loading next question...")
+    time.sleep(5)
 
 
 def quest_7():
@@ -205,8 +226,8 @@ def quest_7():
     Contains the data for question 7
     """
     while True:
-        print("\nQ7. How many islands are there in Japan?")
-        print("A: 500 B: 2500, C: 6800")
+        print(colored(("\nQ7.\nHow many islands are there in Japan?"), 'cyan'))
+        print(colored(("A: 500 B: 2500, C: 6800"), 'cyan'))
         answer7 = input("\nPlease answer here:\n")
 
         if answer7.upper() == "C" or answer7 == "6800":
@@ -221,14 +242,17 @@ def quest_7():
             print("\nIncorrect answer!")
             break
         else:
-            print(f"Invalid data: {answer7}. Please try again! \n")
-    print(f"Answer: (C) \nYour score: {score}/10 \n")
-    print("\n While it is widely known that Japan it a large country,")
+            print(colored((
+                f"Invalid data: {answer7}. Please try again! \n"
+            ), 'cyan'))
+    print(f"Answer: (C) 6800 \nYour score: {score}/10 \n")
+    print("\n\nWhile it is widely known that Japan it a large country,")
     print("with different climates, ")
     print("not many know that Japan is the 4th largest island nation ")
-    print("in the world. It has 4 main islands but also contains upwards of")
-    print("6000 smaller islands.")
-    time.sleep(3)
+    print("in the world.\nIt has 4 main islands but also contains upwards of")
+    print("6800 smaller islands.\n\n")
+    print("Loading next question...")
+    time.sleep(5)
 
 
 def quest_8():
@@ -236,8 +260,10 @@ def quest_8():
     Contains the data for question 8
     """
     while True:
-        print("\nQ8. How many earthquakes are there in Japan every year?")
-        print("A: 675 B: 350, C: 1500")
+        print(colored(("\nQ8."), 'cyan'))
+        print(colored((
+            "How many earthquakes are there in Japan every year?"), 'cyan'))
+        print(colored(("A: 675 B: 350, C: 1500"), 'cyan'))
 
         answer8 = input("\nPlease answer here:\n")
 
@@ -254,12 +280,15 @@ def quest_8():
             break
         else:
             print(f"Invalid data: {answer8}. Please try again! \n")
-    print(f"Answer: (C) \nYour score: {score}/10 \n")
-    print("Japan is located along the 'Pacific Ring of Fire' and is ")
+    print(colored((
+        f"Answer: (C) 1500 \nYour score: {score}/10 \n"
+    ), 'cyan'))
+    print("\n\nJapan is located along the 'Pacific Ring of Fire' and is ")
     print("one of the most Earthquake prone nations in the world. ")
     print("However most of the 1500 earthquakes go unnoticed as they are")
-    print("too weak to be felt by the average person.")
-    time.sleep(3)
+    print("too weak to be felt by the average person.\n\n")
+    print("Loading next question...")
+    time.sleep(5)
 
 
 def quest_9():
@@ -267,10 +296,15 @@ def quest_9():
     Contains the data for question 9
     """
     while True:
-        print("\nQ9. What happens when a train is delayed in Japan?")
-        print("\nA:They give you a sugary snack on arrival")
-        print("\nB:They issue a certificate to notify your employer")
-        print("\nC:They delivery complimentary tissues to your home")
+        print(colored(("\nQ9."), 'cyan'))
+        print(colored(
+            ("What do you get when a train is delayed in Japan?"), 'cyan'))
+        print(colored(("\nA: A sugary snack on arrival"), 'cyan'))
+        print(colored((
+            "\nB: A certificate to notify your employer"), 'cyan'))
+        print(colored((
+            "\nC: A box of tissues and a hug"
+        ), 'cyan'))
 
         answer9 = input("\nPlease answer here:\n")
 
@@ -285,12 +319,15 @@ def quest_9():
             break
         else:
             print(f"Invalid data: {answer9}. Please try again! \n")
-    print(f"Answer: (B) \nYour score: {score}/10 \n")
-    print("Punctuality is exceptionally important in all spheres of society.")
+    print(colored((
+        f"Answer: (B) A certificate \nYour score: {score}/10 \n\n\n"
+    ), 'cyan'))
+    print("Punctuality is exceptionally important in Japanese society.")
     print("This is evident in the amazing public transport system.")
-    print("Trains are almost always on time to the minute. So much so that")
-    print("When a train is delayed, you can get a train delay certificate")
-    time.sleep(3)
+    print("Trains are almost always on time to the minute. So much so...")
+    print("When a train is delayed, you can get a train delay certificate\n\n")
+    print("Loading next question...")
+    time.sleep(5)
 
 
 def quest_10():
@@ -298,10 +335,18 @@ def quest_10():
     Contains the data for question 10
     """
     while True:
-        print("\nQ10. Which of the following is the ruler of Japan have?")
-        print("A:President")
-        print("B:Emporer")
-        print("C:King")
+        print(colored((
+            "\nQ10.\nWhich of the following is the ruler of Japan have?"
+        ), 'cyan'))
+        print(colored((
+            "A:President"
+        ), 'cyan'))
+        print(colored((
+            "B:Emporer"
+        ), 'cyan'))
+        print(colored((
+            "C:King"
+        ), 'cyan'))
 
         answer10 = input("\nPlease answer here:\n")
 
@@ -318,12 +363,15 @@ def quest_10():
             break
         else:
             print(f"Invalid data: {answer10}. Please try again! \n")
-    print(f"Answer: (B) \nYour score: {score}/10 \n")
-    print("The Emporer of Japan is the head of the Japanese nation.")
+    print(colored((
+        f"Answer: (B) Emporer \nYour score: {score}/10 \n"
+    ), 'cyan'))
+    print("\n\nThe Emporer of Japan is the head of the Japanese nation.")
     print("He is a ceremonial figurehead.")
     print("It is commonly accepted that there has been an Emporer in Japan")
-    print("for more the 1500 years. All descended from one family. ")
-    time.sleep(3)
+    print("for more the 1500 years. All descended from one family.\n\n")
+    print("Loading next question...")
+    time.sleep(5)
 
 
 def get_percentage(score, total_questions):

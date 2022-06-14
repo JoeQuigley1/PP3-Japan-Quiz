@@ -32,7 +32,7 @@ def game_menu():
     option = input("Please enter you choice here: ")
 
     if option == "1":
-        print("Great let's play!\n")
+        print("\nGreat let's play!\n")
         get_player_username()
     elif option == "2":
         print("Let's take a look at the scoreboard \n")
@@ -99,8 +99,6 @@ def update_scoreboard(player_username):
     score_worksheet = SHEET.worksheet("scoreboard")
     score_worksheet.append_row([player_username, score])
 
-    print("Scoreboard successfully updated. \n")
-
 
 def display_scoreboard():  # Change to display most recent in scoreboard
     """
@@ -118,7 +116,7 @@ def end_game_scoreboard():
     Displays the scoreboard after the user has played and a different message.
     """
     print("Thank you for playing!")
-    print("I hope you enjoyed...let's have a look at the scoreboard... \n \n")
+    print("I hope you enjoyed!\nLet's have a look at the scoreboard... \n \n")
     score_worksheet_display = SHEET.worksheet("scoreboard").get_all_values()
 
     pprint(score_worksheet_display)
@@ -129,7 +127,7 @@ def end_game_menu():
     """
     Gives the user a different menu than the pregame menu
     """
-    print("Thank you for playing \n")
+    print("Thank you for playing! \n")
     print("Please chose from the options below\n")
     print("1: Give some feedback")
     print("2: Replay the Quiz for fun")
@@ -192,9 +190,7 @@ def main():
     end_game_scoreboard()
     end_game_menu()
 
-#   BUGs
-#   Bug where scoreboard will go to menu before asking feedback after
-#   What happens when there are too many scores in the scoreboard
+
 # The quiz input doesnt work on mobile
 
 
