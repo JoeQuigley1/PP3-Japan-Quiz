@@ -69,14 +69,15 @@ def check_username(values):
     try:
         if len(values) < 3:
             raise ValueError(
-                f"Username is too short!\nYour username only has {len(values)}"
+                f"Username is too short!\n{len(values)} character(s)"
             )
         if len(values) > 8:
             raise ValueError(
-                f"Username is too long!\nYour username has {len(values)} chars"
+                f"Username is too long!\n{len(values)} characters"
             )
-        if values.isalpha() != True:
-            raise ValueError("Please choose a username using letters")
+        if not values:
+            raise ValueError("Please enter a username.")
+            
     except ValueError as e:
         print(f"Invalid data: {e}. Please try again! \n")
         return False

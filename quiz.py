@@ -1,17 +1,10 @@
 import time
-
-# This file will hold the play the quiz function and the questions
-
-
-# Using a similar structure to the get sales data from love sandwiches
-# gives the question and checks to see if the answer is true
-
-
 score = 0
 total_questions = 10
 
+
 def quest_1():
-    
+
     while True:
         print("\n\nWhat is the capital of Japan? \n")
         print("A: Beijing, B: Tokyo, C: Seoul")
@@ -39,7 +32,7 @@ def quest_1():
     print("made up of 23 cities (called 'ku' in Japanese) in central Tokyo")
     print("and a futher 26 cities, (referred to a 'shi' in Japanese)\n")
     print("Loading next question...")
-    
+
 
 def quest_2():
     while True:
@@ -71,6 +64,7 @@ def quest_2():
     print("most prominently being the high demograohic of elderly people.\n\n")
     print("Loading next question...")
 
+
 def quest_3():
     while True:
         print("\n\nAlmost half of all Japanese households have a fax machine.")
@@ -95,6 +89,7 @@ def quest_3():
     print("")
     print("Loading next question...")
     time.sleep(3)
+
 
 def quest_4():
     while True:
@@ -124,7 +119,7 @@ def quest_4():
     print("superstitions around numbers.\n\n")
     print("Loading next question...")
     time.sleep(3)
-    
+
 
 def quest_5():
     while True:
@@ -289,6 +284,7 @@ def quest_10():
     print("It is commonly accepted that there has been an Emporer in Japan")
     print("for more the 1500 years. All descended from one family. ")
 
+
 def get_percentage(score, total_questions):
     """
     Gets a percentage to show the user at the end of the quiz.
@@ -296,8 +292,7 @@ def get_percentage(score, total_questions):
     end_percent = 100 * round(score)/round(total_questions)
     return print(f"You got {end_percent}% ")
 
-# Score is a UnboundLocalError: local variable 'score' referenced before assignment
-# Need to figure out how to 
+
 def start_quiz():
     """
     This intiates the quiz and stores all of the
