@@ -24,6 +24,9 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
 
 -----
 Happy coding!
+ 
+
+Live site is here - https://japan-quiz.herokuapp.com/
 
 # Japan Quiz
 
@@ -123,3 +126,8 @@ https://stackoverflow.com/questions/52153215/how-do-i-define-limits-for-my-input
 
 https://stackoverflow.com/questions/5997987/is-there-an-operator-to-calculate-percentage-in-python
 https://stackoverflow.com/questions/58342969/how-to-update-a-global-variable-across-multiple-functions-in-python used to add score
+
+## Bugs
+
+### mobile
+- Once the quiz starts the number 1 is pre-typed before you can input an answer. 

@@ -77,7 +77,7 @@ def check_username(values):
             )
         if not values:
             raise ValueError("Please enter a username.")
-            
+
     except ValueError as e:
         print(f"Invalid data: {e}. Please try again! \n")
         return False
@@ -188,10 +188,10 @@ def main():
 #   BUGs
 #   Bug where scoreboard will go to menu before asking feedback after
 #   What happens when there are too many scores in the scoreboard
+# The quiz input doesnt work on mobile
 
 
 print("Welcome to my Japan Quiz")
 print("Please enter one of the following options: \n")
-
 
 main()

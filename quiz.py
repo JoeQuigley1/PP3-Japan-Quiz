@@ -6,29 +6,29 @@ total_questions = 10
 def quest_1():
 
     while True:
-        print("\n\nWhat is the capital of Japan? \n")
+        print("\nWhat is the capital of Japan?\n")
         print("A: Beijing, B: Tokyo, C: Seoul")
 
         answer1 = input("\nPlease answer here:\n")
 
         if answer1.upper() == "B" or answer1.capitalize() == "Tokyo":
-            print("\nCorrect! Well done!\n\n")
+            print("\nCorrect! Well done!")
             global score
             score += 1
             break
         elif answer1.upper() == "A" or answer1.upper() == "C":
-            print("\nIncorrect answer!\n\n")
+            print("\nIncorrect answer!")
             break
         elif answer1.capitalize() == "Beijing":
-            print("\nIncorrect answer!\n\n")
+            print("\nIncorrect answer!")
             break
         elif answer1.capitalize() == "Seoul":
-            print("\nIncorrect answer!\n\n")
+            print("\nIncorrect answer!")
             break
         else:
             print(f"Invalid data: {answer1}. Please try again! \n")
     print(f"Answer: Tokyo \nYour score: {score}/10 \n")
-    print("\n\nTokyo Metropolis is a large metropolitan area,")
+    print("\nTokyo Metropolis is a large metropolitan area,")
     print("made up of 23 cities (called 'ku' in Japanese) in central Tokyo")
     print("and a futher 26 cities, (referred to a 'shi' in Japanese)\n")
     print("Loading next question...")
@@ -36,24 +36,24 @@ def quest_1():
 
 def quest_2():
     while True:
-        print("\nWhat is the population of Japan? \n")
+        print("\nWhat is the population of Japan?")
         print("A: 126 million, B: 94 million, C: 77 million ")
 
-        answer2 = input("\nPlease answer here:\n")
+        answer2 = input("Please answer here:\n")
 
         if answer2.upper() == "A" or answer2 == "126 million":
-            print("\nCorrect! Well done!\n\n")
+            print("\nCorrect! Well done!")
             global score
             score += 1
             break
         elif answer2.upper() == "B" or answer2.upper() == "C":
-            print("\nIncorrect answer!\n\n")
+            print("\nIncorrect answer!")
             break
         elif answer2.capitalize() == "94 million":
-            print("\nIncorrect answer!\n\n")
+            print("\nIncorrect answer!")
             break
         elif answer2.capitalize() == "77 million":
-            print("\nIncorrect answer!\n\n")
+            print("\nIncorrect answer!")
             break
         else:
             print(f"Invalid data: {answer2}. Please try again! \n")
@@ -68,9 +68,9 @@ def quest_2():
 def quest_3():
     while True:
         print("\n\nAlmost half of all Japanese households have a fax machine.")
-        print("\nPlease answer T for True or F for False \n")
+        print("\nPlease answer T for True or F for False")
 
-        answer3 = input("\nPlease answer here:\n")
+        answer3 = input("Please answer here:\n")
 
         if answer3.upper() == "T" or answer3 == "True":
             print("\nCorrect! Well done!\n\n")
@@ -94,20 +94,20 @@ def quest_3():
 def quest_4():
     while True:
         print("\nIn Japan which of these numbers are considered to be unlucky")
-        print("\n\nA: 100, B: 13, C: 4 \n")
+        print("\nA: 100, B: 13, C: 4")
 
         answer4 = input("\nPlease answer here:\n")
 
         if answer4.upper() == "C" or answer4 == "4":
-            print("\nCorrect! Well done!\n\n")
+            print("\nCorrect! Well done!")
             global score
             score += 1
             break
         elif answer4.upper() == "A" or answer4 == "100":
-            print("\nIncorrect answer!\n\n")
+            print("\nIncorrect answer!")
             break
         elif answer4.upper() == "B" or answer4 == "13":
-            print("\nIncorrect answer!\n\n")
+            print("\nIncorrect answer!")
             break
         else:
             print(f"Invalid data: {answer4}. Please try again! \n")
@@ -129,15 +129,15 @@ def quest_5():
         answer5 = input("\nPlease answer here:\n")
 
         if answer5.upper() == "C" or answer5 == "KFC Chicken":
-            print("\nCorrect! Well done!\n\n")
+            print("\nCorrect! Well done!")
             global score
             score += 1
             break
         elif answer5.upper() == "A" or answer5 == "Stinky Tofu":
-            print("\nIncorrect answer!\n\n")
+            print("\nIncorrect answer!")
             break
         elif answer5.upper() == "B" or answer5 == "Tuna Sushi":
-            print("\nIncorrect answer!\n\n")
+            print("\nIncorrect answer!")
             break
         else:
             print(f"Invalid data: {answer5}. Please try again! \n")
@@ -159,12 +159,12 @@ def quest_6():
         answer6 = input("\nPlease answer here:\n")
 
         if answer6.upper() == "T" or answer6 == "True":
-            print("\nCorrect! Well done!\n\n")
+            print("\nCorrect! Well done!")
             global score
             score += 1
             break
         elif answer6.upper() == "F" or answer6 == "False":
-            print("\nIncorrect answer!\n\n")
+            print("\nIncorrect answer!")
             break
         else:
             print(f"Invalid data: {answer6}. Please try again! \n")
@@ -182,15 +182,15 @@ def quest_7():
         answer7 = input("\nPlease answer here:\n")
 
         if answer7.upper() == "C" or answer7 == "6800":
-            print("\nCorrect! Well done!\n\n")
+            print("\nCorrect! Well done!")
             global score
             score += 1
             break
         elif answer7.upper() == "A" or answer7 == "500":
-            print("\nIncorrect answer!\n\n")
+            print("\nIncorrect answer!")
             break
         elif answer7.upper() == "B" or answer7 == "2500":
-            print("\nIncorrect answer!\n\n")
+            print("\nIncorrect answer!")
             break
         else:
             print(f"Invalid data: {answer7}. Please try again! \n")
@@ -210,15 +210,15 @@ def quest_8():
         answer8 = input("\nPlease answer here:\n")
 
         if answer8.upper() == "C" or answer8 == "1500":
-            print("\nCorrect! Well done!\n\n")
+            print("\nCorrect! Well done!")
             global score
             score += 1
             break
         elif answer8.upper() == "A" or answer8 == "675":
-            print("\nIncorrect answer!\n\n")
+            print("\nIncorrect answer!")
             break
         elif answer8.upper() == "B" or answer8 == "350":
-            print("\nIncorrect answer!\n\n")
+            print("\nIncorrect answer!")
             break
         else:
             print(f"Invalid data: {answer8}. Please try again! \n")
@@ -239,12 +239,12 @@ def quest_9():
         answer9 = input("\nPlease answer here:\n")
 
         if answer9.upper() == "B":
-            print("\nCorrect! Well done!\n\n")
+            print("\nCorrect! Well done!")
             global score
             score += 1
             break
         elif answer9.upper() == "A" or answer9.upper() == "C":
-            print("\nIncorrect answer!\n\n")
+            print("\nIncorrect answer!")
 
             break
         else:
@@ -266,15 +266,15 @@ def quest_10():
         answer10 = input("\nPlease answer here:\n")
 
         if answer10.upper() == "B" or answer10.capitalize() == "Emporer":
-            print("\nCorrect! Well done!\n\n")
+            print("\nCorrect! Well done!")
             global score
             score += 1
             break
         elif answer10.upper() == "A" or answer10.capitalize() == "President":
-            print("\nIncorrect answer!\n\n")
+            print("\nIncorrect answer!")
             break
         elif answer10.upper() == "C" or answer10.capitalize() == "King":
-            print("\nIncorrect answer!\n\n")
+            print("\nIncorrect answer!")
             break
         else:
             print(f"Invalid data: {answer10}. Please try again! \n")
