@@ -51,7 +51,7 @@ def get_player_username():
         print("The username should consist of between 3 and 6 letters.\n")
         print("Example:  Ken \n")
 
-        player_username = input("Enter your username here: ")
+        player_username = input("Enter your username here:\n")
 
         if check_username(player_username):
             print("Logging username...")

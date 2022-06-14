@@ -118,8 +118,8 @@ https://www.buzzfeed.com/eviecarrick/cool-facts-about-japan
 https://interacnetwork.com/fax-machines-in-japan-how-to-use-them/#:~:text=You%20might%20be%20thinking%2C%20%E2%80%9Cdo,won't%20let%20them%20go!
 
 https://www.geeksforgeeks.org/python-exit-commands-quit-exit-sys-exit-and-os-_exit/  Quit function
-https://www.geeksforgeeks.org/python-string-isalpha-method/?ref=lbp isalpha and also sleep delay
 
 https://stackoverflow.com/questions/52153215/how-do-i-define-limits-for-my-inputs-in-python rating parameters stack overflow
 
 https://stackoverflow.com/questions/5997987/is-there-an-operator-to-calculate-percentage-in-python
+https://stackoverflow.com/questions/58342969/how-to-update-a-global-variable-across-multiple-functions-in-python used to add score

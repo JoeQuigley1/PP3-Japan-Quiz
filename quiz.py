@@ -9,7 +9,7 @@ def quest_1():
         print("\n\nWhat is the capital of Japan? \n")
         print("A: Beijing, B: Tokyo, C: Seoul")
 
-        answer1 = input("\nPlease answer here: ")
+        answer1 = input("\nPlease answer here:\n")
 
         if answer1.upper() == "B" or answer1.capitalize() == "Tokyo":
             print("\nCorrect! Well done!\n\n")
@@ -39,7 +39,7 @@ def quest_2():
         print("\nWhat is the population of Japan? \n")
         print("A: 126 million, B: 94 million, C: 77 million ")
 
-        answer2 = input("\nPlease answer here: ")
+        answer2 = input("\nPlease answer here:\n")
 
         if answer2.upper() == "A" or answer2 == "126 million":
             print("\nCorrect! Well done!\n\n")
@@ -70,7 +70,7 @@ def quest_3():
         print("\n\nAlmost half of all Japanese households have a fax machine.")
         print("\nPlease answer T for True or F for False \n")
 
-        answer3 = input("\nPlease answer here: ")
+        answer3 = input("\nPlease answer here:\n")
 
         if answer3.upper() == "T" or answer3 == "True":
             print("\nCorrect! Well done!\n\n")
@@ -96,7 +96,7 @@ def quest_4():
         print("\nIn Japan which of these numbers are considered to be unlucky")
         print("\n\nA: 100, B: 13, C: 4 \n")
 
-        answer4 = input("\nPlease answer here: ")
+        answer4 = input("\nPlease answer here:\n")
 
         if answer4.upper() == "C" or answer4 == "4":
             print("\nCorrect! Well done!\n\n")
@@ -126,7 +126,7 @@ def quest_5():
         print("What do Japanese people eat for Christmas?\n")
         print("\nA: Stinky Tofu, B: California Roll, C: KFC Chicken")
 
-        answer5 = input("\nPlease answer here: ")
+        answer5 = input("\nPlease answer here:\n")
 
         if answer5.upper() == "C" or answer5 == "KFC Chicken":
             print("\nCorrect! Well done!\n\n")
@@ -156,7 +156,7 @@ def quest_6():
         print("\nJapan sells more adult diapers than children's diapers.")
         print("\nPlease enter T for True and F for False")
 
-        answer6 = input("\nPlease answer here: ")
+        answer6 = input("\nPlease answer here:\n")
 
         if answer6.upper() == "T" or answer6 == "True":
             print("\nCorrect! Well done!\n\n")
@@ -179,7 +179,7 @@ def quest_7():
     while True:
         print("\nHow many islands are there in Japan?")
         print("A: 500 B: 2500, C: 6800")
-        answer7 = input("\nPlease answer here: ")
+        answer7 = input("\nPlease answer here:\n")
 
         if answer7.upper() == "C" or answer7 == "6800":
             print("\nCorrect! Well done!\n\n")
@@ -207,7 +207,7 @@ def quest_8():
         print("\nHow many earthquakes are there in Japan every year?")
         print("A: 675 B: 350, C: 1500")
 
-        answer8 = input("\nPlease answer here: ")
+        answer8 = input("\nPlease answer here:\n")
 
         if answer8.upper() == "C" or answer8 == "1500":
             print("\nCorrect! Well done!\n\n")
@@ -236,7 +236,7 @@ def quest_9():
         print("\nB:They issue a certificate to notify your employer")
         print("\nC:They delivery complimentary tissues to your home")
 
-        answer9 = input("\nPlease answer here: ")
+        answer9 = input("\nPlease answer here:\n")
 
         if answer9.upper() == "B":
             print("\nCorrect! Well done!\n\n")
@@ -263,7 +263,7 @@ def quest_10():
         print("B:Emporer")
         print("C:King")
 
-        answer10 = input("\nPlease answer here: ")
+        answer10 = input("\nPlease answer here:\n")
 
         if answer10.upper() == "B" or answer10.capitalize() == "Emporer":
             print("\nCorrect! Well done!\n\n")
