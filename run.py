@@ -1,8 +1,12 @@
+"""
+Import selection
+"""
 from pprint import pprint
 import time
 import gspread
 from google.oauth2.service_account import Credentials
 import quiz
+from termcolor import colored
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -98,11 +102,12 @@ def update_scoreboard(player_username):
     print("Scoreboard successfully updated. \n")
 
 
-def display_scoreboard():
+def display_scoreboard():  # Change to display most recent in scoreboard
     """
-    Displays the scoreboard before the player logs a username
+    Displays the  scoreboard before the player logs a username
     """
     score_worksheet_display = SHEET.worksheet("scoreboard").get_all_values()
+
     pprint(score_worksheet_display)
     print("\n \n")
     game_menu()
@@ -110,11 +115,12 @@ def display_scoreboard():
 
 def end_game_scoreboard():
     """
-    Displays the scoreboard after the user has played
+    Displays the scoreboard after the user has played and a different message.
     """
     print("Thank you for playing!")
     print("I hope you enjoyed...let's have a look at the scoreboard... \n \n")
     score_worksheet_display = SHEET.worksheet("scoreboard").get_all_values()
+
     pprint(score_worksheet_display)
     print("\n \n")
 
@@ -125,8 +131,8 @@ def end_game_menu():
     """
     print("Thank you for playing \n")
     print("Please chose from the options below\n")
-    print("1: Give some feedback ")
-    print("2: Replay the Quiz")
+    print("1: Give some feedback")
+    print("2: Replay the Quiz for fun")
     print("3: Quit the game!")
 
     choice = input("\nPlease type here: ")
@@ -134,9 +140,10 @@ def end_game_menu():
     if choice == "1":
         user_feedback()
     elif choice == "2":
-        print("\nLet's Try again for fun!\n")
+        print("\nLet's see how we do this time!\n")
         quiz.start_quiz()
     elif choice == "3":
+        print("Thanks for playing!")
         quit()
     else:
         print("Invalid choice. Please choose 1, 2 or 3")
@@ -191,7 +198,8 @@ def main():
 # The quiz input doesnt work on mobile
 
 
-print("Welcome to my Japan Quiz")
-print("Please enter one of the following options: \n")
+print(colored(("Welcome to my Japan Quiz"), 'magenta'))
+print(colored(("Let's get started!\n"), 'magenta'))
+print(colored(("Please enter one of the following options: \n"), 'cyan'))
 
 main()
