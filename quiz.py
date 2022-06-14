@@ -6,24 +6,21 @@ import time
 # Using a similar structure to the get sales data from love sandwiches
 # gives the question and checks to see if the answer is true
 
-def start_quiz():
-    """
-    This intiates the quiz and stores all of the
-    questions.
-    """
 
-    score = 0
-    total_questions = 10
+score = 0
+total_questions = 10
 
-#   Question 1
+def quest_1():
+    
     while True:
-        print("\nWhat is the capital of Japan? \n")
+        print("\n\nWhat is the capital of Japan? \n")
         print("A: Beijing, B: Tokyo, C: Seoul")
 
         answer1 = input("\nPlease answer here: ")
 
         if answer1.upper() == "B" or answer1.capitalize() == "Tokyo":
             print("\nCorrect! Well done!\n\n")
+            global score
             score += 1
             break
         elif answer1.upper() == "A" or answer1.upper() == "C":
@@ -42,9 +39,9 @@ def start_quiz():
     print("made up of 23 cities (called 'ku' in Japanese) in central Tokyo")
     print("and a futher 26 cities, (referred to a 'shi' in Japanese)\n")
     print("Loading next question...")
-    time.sleep(3)
+    
 
-#   Question 2
+def quest_2():
     while True:
         print("\nWhat is the population of Japan? \n")
         print("A: 126 million, B: 94 million, C: 77 million ")
@@ -53,6 +50,7 @@ def start_quiz():
 
         if answer2.upper() == "A" or answer2 == "126 million":
             print("\nCorrect! Well done!\n\n")
+            global score
             score += 1
             break
         elif answer2.upper() == "B" or answer2.upper() == "C":
@@ -72,9 +70,8 @@ def start_quiz():
     print("There are many factors that contribute to this..")
     print("most prominently being the high demograohic of elderly people.\n\n")
     print("Loading next question...")
-    time.sleep(3)
 
-#   Question 3 NOT FINISHED
+def quest_3():
     while True:
         print("\n\nAlmost half of all Japanese households have a fax machine.")
         print("\nPlease answer T for True or F for False \n")
@@ -83,6 +80,7 @@ def start_quiz():
 
         if answer3.upper() == "T" or answer3 == "True":
             print("\nCorrect! Well done!\n\n")
+            global score
             score += 1
             break
         elif answer3.upper() == "F" or answer3 == "False":
@@ -98,7 +96,7 @@ def start_quiz():
     print("Loading next question...")
     time.sleep(3)
 
-#   Question 4
+def quest_4():
     while True:
         print("\nIn Japan which of these numbers are considered to be unlucky")
         print("\n\nA: 100, B: 13, C: 4 \n")
@@ -107,6 +105,7 @@ def start_quiz():
 
         if answer4.upper() == "C" or answer4 == "4":
             print("\nCorrect! Well done!\n\n")
+            global score
             score += 1
             break
         elif answer4.upper() == "A" or answer4 == "100":
@@ -125,8 +124,9 @@ def start_quiz():
     print("superstitions around numbers.\n\n")
     print("Loading next question...")
     time.sleep(3)
+    
 
-    # Question 5
+def quest_5():
     while True:
         print("What do Japanese people eat for Christmas?\n")
         print("\nA: Stinky Tofu, B: California Roll, C: KFC Chicken")
@@ -135,6 +135,7 @@ def start_quiz():
 
         if answer5.upper() == "C" or answer5 == "KFC Chicken":
             print("\nCorrect! Well done!\n\n")
+            global score
             score += 1
             break
         elif answer5.upper() == "A" or answer5 == "Stinky Tofu":
@@ -154,7 +155,8 @@ def start_quiz():
     print("Loading next question...")
     time.sleep(3)
 
-#   Question 6
+
+def quest_6():
     while True:
         print("\nJapan sells more adult diapers than children's diapers.")
         print("\nPlease enter T for True and F for False")
@@ -163,6 +165,7 @@ def start_quiz():
 
         if answer6.upper() == "T" or answer6 == "True":
             print("\nCorrect! Well done!\n\n")
+            global score
             score += 1
             break
         elif answer6.upper() == "F" or answer6 == "False":
@@ -176,7 +179,8 @@ def start_quiz():
     print("This is attributed to many things such as the high standard")
     print("of living, low emigration and a declining birth rate.")
 
-#   Question 7
+
+def quest_7():
     while True:
         print("\nHow many islands are there in Japan?")
         print("A: 500 B: 2500, C: 6800")
@@ -184,6 +188,7 @@ def start_quiz():
 
         if answer7.upper() == "C" or answer7 == "6800":
             print("\nCorrect! Well done!\n\n")
+            global score
             score += 1
             break
         elif answer7.upper() == "A" or answer7 == "500":
@@ -201,7 +206,8 @@ def start_quiz():
     print("in the world. It has 4 main islands but also contains upwards of")
     print("6000 smaller islands.")
 
-#   Question 8
+
+def quest_8():
     while True:
         print("\nHow many earthquakes are there in Japan every year?")
         print("A: 675 B: 350, C: 1500")
@@ -210,6 +216,7 @@ def start_quiz():
 
         if answer8.upper() == "C" or answer8 == "1500":
             print("\nCorrect! Well done!\n\n")
+            global score
             score += 1
             break
         elif answer8.upper() == "A" or answer8 == "675":
@@ -226,7 +233,8 @@ def start_quiz():
     print("However most of the 1500 earthquakes go unnoticed as they are")
     print("too weak to be felt by the average person.")
 
-#   Qestion 9
+
+def quest_9():
     while True:
         print("\nWhat happens when a train is delayed in Japan?")
         print("\nA:They give you a sugary snack on arrival")
@@ -237,6 +245,7 @@ def start_quiz():
 
         if answer9.upper() == "B":
             print("\nCorrect! Well done!\n\n")
+            global score
             score += 1
             break
         elif answer9.upper() == "A" or answer9.upper() == "C":
@@ -250,9 +259,9 @@ def start_quiz():
     print("This is evident in the amazing public transport system.")
     print("Trains are almost always on time to the minute. So much so that")
     print("When a train is delayed, you can get a train delay certificate")
-    print("Which is basically a get out of jail free card with your employer.")
 
-# Question 10
+
+def quest_10():
     while True:
         print("\nWhich of the following is the ruler of Japan have?")
         print("A:President")
@@ -263,6 +272,7 @@ def start_quiz():
 
         if answer10.upper() == "B" or answer10.capitalize() == "Emporer":
             print("\nCorrect! Well done!\n\n")
+            global score
             score += 1
             break
         elif answer10.upper() == "A" or answer10.capitalize() == "President":
@@ -279,12 +289,32 @@ def start_quiz():
     print("It is commonly accepted that there has been an Emporer in Japan")
     print("for more the 1500 years. All descended from one family. ")
 
-    def percentage(score, total_questions):
-        end_percent = 100 * round(score)/round(total_questions)
-        return print(f" You got {end_percent}% ")
+def get_percentage(score, total_questions):
+    """
+    Gets a percentage to show the user at the end of the quiz.
+    """
+    end_percent = 100 * round(score)/round(total_questions)
+    return print(f"You got {end_percent}% ")
 
-    percentage(score, total_questions)
+# Score is a UnboundLocalError: local variable 'score' referenced before assignment
+# Need to figure out how to 
+def start_quiz():
+    """
+    This intiates the quiz and stores all of the
+    questions.
+    Calls the get_percentage function and returns the final score.
+    """
+    quest_1()
+    quest_2()
+    quest_3()
+    quest_4()
+    quest_5()
+    quest_6()
+    quest_7()
+    quest_8()
+    quest_9()
+    quest_10()
+
+    get_percentage(score, total_questions)
     return score
 
-
-start_quiz()
