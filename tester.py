@@ -1,6 +1,7 @@
+score = 0
 
 def quest_1():
-    score = 0
+    
     while True:
         print("\n\nWhat is the capital of Japan? \n")
         print("A: Beijing, B: Tokyo, C: Seoul")
@@ -9,6 +10,7 @@ def quest_1():
 
         if answer1.upper() == "B" or answer1.capitalize() == "Tokyo":
             print("\nCorrect! Well done!\n\n")
+            global score
             score += 1
             break
         elif answer1.upper() == "A" or answer1.upper() == "C":
@@ -38,6 +40,7 @@ def quest_2():
 
         if answer2.upper() == "A" or answer2 == "126 million":
             print("\nCorrect! Well done!\n\n")
+            global score
             score += 1
             break
         elif answer2.upper() == "B" or answer2.upper() == "C":
@@ -62,9 +65,12 @@ def quest_2():
 # Score is a UnboundLocalError: local variable 'score' referenced before assignment
 # Need to figure out how to 
 def myMain():
-
+   
     quest_1()
     quest_2()
 
-    
+
+
+
+
 myMain()
