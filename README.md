@@ -18,19 +18,13 @@ If you have credentials, such as in the Love Sandwiches project, you must create
 
 Connect your GitHub repository and deploy as normal.
 
-## Constraints
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
------
-Happy coding!
- 
 
 Live site is here - https://japan-quiz.herokuapp.com/
 
 # Japan Quiz
 
-I thought it would be interesting to do a quiz on Japan. I spent over 4 years living and working in Japan, between Tokyo and Hiroshima. It is a country that will always be special to me.
+I thought it would be interesting to do a quiz on Japan. I spent over 4 years living and working in Japan, between Tokyo and Hiroshima. It is a country that will always be special to me. Making a quiz about a place I love, while learning how to code (something I am becoming passionate about) has been a pleasure. 
 
 
 # The Goal for this project
@@ -62,14 +56,23 @@ I thought it would be interesting to do a quiz on Japan. I spent over 4 years li
 + Should work on any device.
 + Should use libraries/API and be deployed to a cloud-based platform. 
 
+# Design
+Japan Quiz is a console  based application. Therefore I did not intergrate any graphic design. Included are the following:
+
++ Flowchart which shows the design process before being implement.
++ The use of colours to make the application more user friendly 
+
+![Flowchart](docs/feature-screenshots/flowchart-p3.png)
+
+
 
 # Existing Features
 
 ## Game menu
 The game menu has 3 options for the user.
-+ - Play the game
-+ - View the scoreboard
-+ - Quit
++ Play the game
++ View the scoreboard
++ Quit
 
 ### Play game 
  
@@ -80,31 +83,44 @@ The game menu has 3 options for the user.
 
  ### View the scoreboard
 
-+ - Displays the scoreboard which consists of the username and score.
++ Displays the scoreboard which consists of the username and score.
 
 ### Quit
 
-+ - This gives the user an option to leave the game.
-+ - It contains a thank you message.
++ This gives the user an option to leave the game.
++ It contains a thank you message.
 
 ## End Game Menu
 The end game menu has a similar menu to the Pregame menu except it offers a feedback choice.
 
 ### Feedback
- + - Give a rating out of 10 on the quiz.
- + - Comment on the quiz with a max of 200 characters.
+ + Give a rating out of 10 on the quiz.
+ + Comment on the quiz with a max of 200 characters.
 
 # Fututre Features
 
 ## Interactive Scoreboard
-+ - I would like to implement a scoreboard which the user can scroll through.
++ I would like to implement a scoreboard which the user can scroll through.
 
 ## Password locked Username
-+ - A password locked username would allow the user to repeat the quiz and try to improve.
++ A password locked username would allow the user to repeat the quiz and try to improve.
 
 ## Devlope the questions further
-+ - I would like to add a different categories feature. This would allow the user to test their knowledge on specific topic relating to Japan. 
++ I would like to add a different categories feature. This would allow the user to test their knowledge on specific topic relating to Japan. 
 
+
+# Testing
+
++ The code has been tested using the online [PEP8](http://pep8online.com/)
+
+![Quiz file Validation](docs/testing/PEP8-Validation-quiz.png)
+
+
+![Run file Validation](docs/testing/PEP8-Validation-run.png)
+
+
+# Bugs
++ One bug I found was that my username was accepting blankspace as a valid choice.
 
 
 
@@ -122,6 +138,11 @@ Python libraries and api used
 - [Google auth](https://google-auth.readthedocs.io/en/master/index.html)
 - [Pprint](https://docs.python.org/3/library/pprint.html)
 - [Time](https://www.programiz.com/python-programming/time/sleep)
+- [Termcolor](https://pypi.org/project/termcolor/)
+- [Heroku](https://www.heroku.com/)
+- [Gitpod]
+- [GitHub]
+- [Lucid]
 
 ## Data storage
 
@@ -130,18 +151,27 @@ The scoreboard which contains a username and their score is stored in Google She
 - [Google Drive API](https://developers.google.com/drive/api)
 - [Google Sheet API](https://developers.google.com/sheets/api)
 
+# Deployment
+After finishing the majority of the project I deployed the site on Heroku with it linked to GitHub.
 
 # credits 
+For Inspirations relating to code, help and advice.
+
++ [Martina Terlevic](https://www.linkedin.com/in/martinaterlevic/ "Martina Terlevic") - Code Institute Mentor.
++ [Code Institute] - For their lessons on coding and the example projects which was a base to work from.
++ Slack - The amazing community in Slack has been invaluable to my progress and devoplement. 
++ [StackOverFlow] - Help with the changing the score (https://stackoverflow.com/questions/58342969/how-to-update-a-global-variable-across-multiple-functions-in-python)
++ [GeeeksForGeeks]- General help (https://stackoverflow.com/questions/58342969/how-to-update-a-global-variable-across-multiple-functions-in-python)
+
+
+
+For help with Content.
+
++ Again as mentioned above my mentor Martina was a great help with understanding any issues and helping me in a friendly manner
+
 https://www.rickshawtravel.co.uk/blog/10-fun-facts-japan/ Facts about Japan
 https://www.buzzfeed.com/eviecarrick/cool-facts-about-japan
 https://interacnetwork.com/fax-machines-in-japan-how-to-use-them/#:~:text=You%20might%20be%20thinking%2C%20%E2%80%9Cdo,won't%20let%20them%20go!
-
-https://www.geeksforgeeks.org/python-exit-commands-quit-exit-sys-exit-and-os-_exit/  Quit function
-
-https://stackoverflow.com/questions/52153215/how-do-i-define-limits-for-my-inputs-in-python rating parameters stack overflow
-
-https://stackoverflow.com/questions/5997987/is-there-an-operator-to-calculate-percentage-in-python
-https://stackoverflow.com/questions/58342969/how-to-update-a-global-variable-across-multiple-functions-in-python used to add score
 
 https://replit.com/talk/learn/How-to-Use-Termcolor-In-Python/24684 idea for adding color
 

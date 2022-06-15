@@ -91,7 +91,7 @@ def quest_3():
             "Half of all Japanese households have a fax machine"
             ), 'cyan'
             ))
-        
+
         print(colored(("\nPlease answer T for True or F for False\n"), 'cyan'))
 
         answer3 = input("Please answer here:\n")
