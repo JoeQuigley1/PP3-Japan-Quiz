@@ -40,6 +40,9 @@ I thought it would be interesting to do a quiz on Japan. I spent over 4 years li
 ## User Goals 
 + To be amused by testing my facts and learn a variety of useful facts about Japan.
 
+## Audience:
++ - This quiz is intended for anyone who would like to test or broaden their knowledge of Japan.
+
 ## User stories
 
 + As a user, I want to see my score and be able to compare it with others
@@ -60,7 +63,7 @@ I thought it would be interesting to do a quiz on Japan. I spent over 4 years li
 + Should use libraries/API and be deployed to a cloud-based platform. 
 
 
-# Features
+# Existing Features
 
 ## Game menu
 The game menu has 3 options for the user.
@@ -90,6 +93,19 @@ The end game menu has a similar menu to the Pregame menu except it offers a feed
 ### Feedback
  + - Give a rating out of 10 on the quiz.
  + - Comment on the quiz with a max of 200 characters.
+
+# Fututre Features
+
+## Interactive Scoreboard
++ - I would like to implement a scoreboard which the user can scroll through.
+
+## Password locked Username
++ - A password locked username would allow the user to repeat the quiz and try to improve.
+
+## Devlope the questions further
++ - I would like to add a different categories feature. This would allow the user to test their knowledge on specific topic relating to Japan. 
+
+
 
 
     
@@ -126,6 +142,8 @@ https://stackoverflow.com/questions/52153215/how-do-i-define-limits-for-my-input
 
 https://stackoverflow.com/questions/5997987/is-there-an-operator-to-calculate-percentage-in-python
 https://stackoverflow.com/questions/58342969/how-to-update-a-global-variable-across-multiple-functions-in-python used to add score
+
+https://replit.com/talk/learn/How-to-Use-Termcolor-In-Python/24684 idea for adding color
 
 ## Bugs
 

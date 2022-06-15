@@ -88,7 +88,8 @@ def quest_3():
     while True:
         print(colored(("\nQ3."), 'cyan'))
         print(colored((
-            "Almost half of all Japanese households have a fax machine"), 'cyan'
+            "Half of all Japanese households have a fax machine"
+            ), 'cyan'
             ))
         
         print(colored(("\nPlease answer T for True or F for False\n"), 'cyan'))
@@ -110,7 +111,9 @@ def quest_3():
         f"Answer: True \nYour score: {score}/10 \n")))
     print("\n\nAccording to the Times, almost 100% of businesses and 45%")
     print("of households in Japan still have fax machines!")
-    print("Most 7 Eleven stores also offer a fax service.\n\n")
+    print("Japan has a very paper based work culture, which")
+    print("helps to maintain the popularity of the fax")
+    print("Most 7 Eleven convenience stores also offer a fax service.\n\n")
     print("Loading next question...")
     time.sleep(5)
 
@@ -144,7 +147,7 @@ def quest_4():
     print(colored((f"Answer: (C) 4 \nYour score: {score}/10 \n"), 'cyan'))
     print("\n\nUnlucky numbers in Japanese often derive from their readings")
     print("The number 4 is sometimes called 'shi' which...")
-    print("also unfortunatley sounds like the word for death.\n")
+    print("also unfortunatley sounds like the word for death.")
     print("Many East Asian countries share similar")
     print("superstitions around numbers.\n\n")
     print("Loading next question...")
@@ -179,10 +182,10 @@ def quest_5():
     print(colored((
         f"Answer: (C) KFC Chicken \nYour score: {score}/10 \n"), 'cyan'))
     print("\n\nChristmas is not widely celebrated in Japan.")
-    print("People go shopping and couples go out for a Christmas meal. Turkey")
-    print("which is usually eaten at Christmas, is difficult to source")
-    print("in Japan. For this reason KFC is an extremely popular alternative.")
-    print("KFC restaurants will ONLY serve those who have booked in advance.")
+    print("People go shopping and couples go out for a Christmas meal.")
+    print("Turkey is difficult to source in Japan. ")
+    print("For this reason KFC chicken is an extremely popular alternative.")
+    print("KFC restaurants will ONLY serve BOOKINGS in advance, on Dec 25th.")
     print("\n\nLoading next question...")
     time.sleep(5)
 
@@ -193,30 +196,36 @@ def quest_6():
     """
     while True:
         print(colored((
-            "\nQ6.\nJapan sells more adult diapers than children's diapers."
+            "\nQ6.\nWhat is the most popular sport in Japan?"
             ), 'cyan'))
-        print(colored(("\nPlease enter T for True and F for False"), 'cyan'))
+        print(colored(("\nPlease answer with A, B, or C"), 'cyan'))
+        print(colored(
+            ("A: Soccer, B: Sumo, C Baseball")))
 
         answer6 = input("\nPlease answer here:\n")
 
-        if answer6.upper() == "T" or answer6 == "True":
+        if answer6.upper() == "C" or answer6.capitalize() == "Baseball":
             print("\nCorrect answer!")
             global score
             score += 1
             break
-        elif answer6.upper() == "F" or answer6 == "False":
+        elif answer6.upper() == "A" or answer6.capitalize() == "Soccer":
+            print("\nIncorrect answer!")
+            break
+        elif answer6.upper() == "B" or answer6.capitalize() == "Sumo":
             print("\nIncorrect answer!")
             break
         else:
             print(f"Invalid data: {answer6}. Please try again! \n")
     print(colored((
-        f"Answer: (T) True \nYour score: {score}/10 \n"
+        f"Answer: (C) Baseball \nYour score: {score}/10 \n\n\n"
     ), 'cyan'))
-    print("\n\nOne of the reasons is that Japan")
-    print("has a very large ageing population.")
-    print("One third of the Japanese population is aged over 65.")
-    print("Japan is not alone in this trend as many countries like")
-    print("China, India and Italy are using more and more adult diapers.\n\n")
+    print("Baseball is by far the most popular sport in Japan, both as")
+    print("a spectator sport and active players.")
+    print("Baseball in Japan has a unique atomosphere. Similar to European")
+    print("soccer clubs. Each team has a band who chants while batting.")
+    print("Teams are owned by companies which can be seen in their names")
+    print("For examples Hiroshima Toyo Carp or Tokyo Yakult Swallows.")
     print("Loading next question...")
     time.sleep(5)
 
@@ -227,7 +236,7 @@ def quest_7():
     """
     while True:
         print(colored(("\nQ7.\nHow many islands are there in Japan?"), 'cyan'))
-        print(colored(("A: 500 B: 2500, C: 6800"), 'cyan'))
+        print(colored(("A: 500 B: 2500 C: 6800"), 'cyan'))
         answer7 = input("\nPlease answer here:\n")
 
         if answer7.upper() == "C" or answer7 == "6800":
