@@ -27,6 +27,8 @@ Live site is here - https://japan-quiz.herokuapp.com/
 I thought it would be interesting to do a quiz on Japan. I spent over 4 years living and working in Japan, between Tokyo and Hiroshima. It is a country that will always be special to me. Making a quiz about a place I love, while learning how to code (something I am becoming passionate about) has been a pleasure. 
 
 
+# Table of Contents
+
 # The Goal for this project
 
 # UX
@@ -120,9 +122,19 @@ The end game menu has a similar menu to the Pregame menu except it offers a feed
 
 
 # Bugs
+
+## Resolved bugs
 + One bug I found was that my username was accepting blankspace as a valid choice.
+    + The solution to this came with help from my Mentor.
+    + I used an if not statement as seen below
 
+![Bug fix](docs/testing/bug%20fix.png)
 
+## Unresolved bugs
++ The app does not function optimally on mobile devices.
++ Once the quiz starts many typing an visual errors occur.
+
+The project is designed to work on a pc console. 
 
     
 # Technologies Used 
@@ -167,15 +179,12 @@ For Inspirations relating to code, help and advice.
 
 For help with Content.
 
-+ Again as mentioned above my mentor Martina was a great help with understanding any issues and helping me in a friendly manner
++ Again as mentioned above my mentor Martina has been a fantastic help with understanding any issues and helping me in a friendly manner.
 
-https://www.rickshawtravel.co.uk/blog/10-fun-facts-japan/ Facts about Japan
-https://www.buzzfeed.com/eviecarrick/cool-facts-about-japan
-https://interacnetwork.com/fax-machines-in-japan-how-to-use-them/#:~:text=You%20might%20be%20thinking%2C%20%E2%80%9Cdo,won't%20let%20them%20go!
++ The facts about Japan came from various media sources and from my own anecdotal knowledge of the country and culture. 
 
-https://replit.com/talk/learn/How-to-Use-Termcolor-In-Python/24684 idea for adding color
++ Some sources used to generate the quiz questions are as follows:
 
-## Bugs
-
-### mobile
-- Once the quiz starts the number 1 is pre-typed before you can input an answer. 
+[RickShawTravel](https://www.rickshawtravel.co.uk/blog/10-fun-facts-japan/)
+[BuzFeed](https://www.buzzfeed.com/eviecarrick/cool-facts-about-japan)
+[Interac](https://interacnetwork.com/fax-machines-in-japan-how-to-use-them/#:~:text=You%20might%20be%20thinking%2C%20%E2%80%9Cdo,won't%20let%20them%20go!)
