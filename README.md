@@ -55,7 +55,6 @@ I thought it would be interesting to do a quiz on Japan. I spent over 4 years li
 ## Requirements 
 
 + Easy to play and understand
-+ Should work on any device.
 + Should use libraries/API and be deployed to a cloud-based platform. 
 
 # Design
@@ -166,7 +165,7 @@ The scoreboard which contains a username and their score is stored in Google She
 # Deployment
 After finishing the majority of the project I deployed the site on Heroku with it linked to GitHub.
 
-# credits 
+# Credits 
 For Inspirations relating to code, help and advice.
 
 + [Martina Terlevic](https://www.linkedin.com/in/martinaterlevic/ "Martina Terlevic") - Code Institute Mentor.
@@ -185,6 +184,6 @@ For help with Content.
 
 + Some sources used to generate the quiz questions are as follows:
 
-[RickShawTravel](https://www.rickshawtravel.co.uk/blog/10-fun-facts-japan/)
-[BuzFeed](https://www.buzzfeed.com/eviecarrick/cool-facts-about-japan)
-[Interac](https://interacnetwork.com/fax-machines-in-japan-how-to-use-them/#:~:text=You%20might%20be%20thinking%2C%20%E2%80%9Cdo,won't%20let%20them%20go!)
++ [RickShawTravel](https://www.rickshawtravel.co.uk/blog/10-fun-facts-japan/)
++ [BuzFeed](https://www.buzzfeed.com/eviecarrick/cool-facts-about-japan)
++ [Interac](https://interacnetwork.com/fax-machines-in-japan-how-to-use-them/#:~:text=You%20might%20be%20thinking%2C%20%E2%80%9Cdo,won't%20let%20them%20go!)
