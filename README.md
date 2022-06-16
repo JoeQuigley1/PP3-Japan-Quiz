@@ -49,6 +49,7 @@ Japan Quiz is a console  based application. Therefore I did not intergrate any g
 # Existing Features
 !!! Need to add screenshots!
 ## Game menu
+
 ![Game Menu](docs/feature-screenshots/startup-screen.png)
 The game menu has 3 options for the user.
 + Play the game
@@ -56,13 +57,19 @@ The game menu has 3 options for the user.
 + Quit
 
 ### Play game 
+
 ![Play Game](docs/feature-screenshots/request-usernam.png)
-&nbsp; 
+
+
  + Requests a username
  + Checks if the username is valid.
+
+
 ![Checking username](docs/feature-screenshots/checking-username.png)
  + Store a username in google sheets.
  + Starts a quiz about Japan.
+
+
 ![Quiz](docs/feature-screenshots/questions.png)
  + Cycle through 10 questions about Japan.
 
@@ -126,7 +133,7 @@ I used some validation to check the username and the questions were asked correc
 
 ## Unresolved bugs
 + The app does not function optimally on mobile devices.
-+ Once the quiz starts many typing an visual errors occur.
++ Once the quiz starts many typing and visual errors occur.
 
 The project is designed to work on a pc console. 
 
@@ -146,9 +153,9 @@ Python libraries and api used
 - [Time](https://www.programiz.com/python-programming/time/sleep)
 - [Termcolor](https://pypi.org/project/termcolor/)
 - [Heroku](https://www.heroku.com/)
-- [Gitpod]
-- [GitHub]
-- [Lucid]
+- [Gitpod](https://www.gitpod.io/)
+- [GitHub](https://github.com/)
+- [Lucid](https://lucid.co/)
 
 ## Data storage
 
