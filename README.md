@@ -23,6 +23,7 @@ Connect your GitHub repository and deploy as normal.
 Live site is here - https://japan-quiz.herokuapp.com/
 
 # Japan Quiz
+![App](docs/feature-screenshots/responsive-img.png)
 
 I thought it would be interesting to do a quiz on Japan. I spent over 4 years living and working in Japan, between Tokyo and Hiroshima. It is a country that will always be special to me. Making a quiz about a place I love, while learning how to code (something I am becoming passionate about) has been a pleasure. 
 

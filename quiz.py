@@ -15,6 +15,7 @@ def quest_1():
     print("\nLet's go!")
     while True:
         print(colored(("\nQ1. What is the capital of Japan?\n"), 'cyan'))
+        print(colored(("\nPlease answer with A, B, or C\n"), 'cyan'))
         print(colored(("A: Beijing, B: Tokyo, C: Seoul"), 'cyan'))
 
         answer1 = input("\nPlease answer here:\n")
@@ -50,6 +51,7 @@ def quest_2():
     """
     while True:
         print(colored(("\nQ2. What is the population of Japan?"), 'cyan'))
+        print(colored(("\nPlease answer with A, B, or C\n"), 'cyan'))
         print(colored((
             "A: 126 million, B: 94 million, C: 77 million"), 'cyan'))
 
@@ -127,6 +129,7 @@ def quest_4():
         print(colored((
             "In Japan which of these numbers are considered to be unlucky"
             ), 'cyan'))
+        print(colored(("\nPlease answer with A, B, or C\n"), 'cyan'))
         print(colored(("\nA: 100, B: 13, C: 4"), 'cyan'))
 
         answer4 = input("\nPlease answer here:\n")
@@ -161,6 +164,7 @@ def quest_5():
     while True:
         print(colored((
             "\nQ5.\nWhat do Japanese people eat for Christmas?\n"), 'cyan'))
+        print(colored(("\nPlease answer with A, B, or C\n"), 'cyan'))
         print(colored((
             "A: Stinky Tofu, B: California Roll, C: KFC Chicken"), 'cyan'))
 
@@ -198,7 +202,7 @@ def quest_6():
         print(colored((
             "\nQ6.\nWhat is the most popular sport in Japan?"
             ), 'cyan'))
-        print(colored(("\nPlease answer with A, B, or C"), 'cyan'))
+        print(colored(("\nPlease answer with A, B, or C\n"), 'cyan'))
         print(colored(
             ("A: Soccer, B: Sumo, C Baseball")))
 
@@ -236,6 +240,7 @@ def quest_7():
     """
     while True:
         print(colored(("\nQ7.\nHow many islands are there in Japan?"), 'cyan'))
+        print(colored(("\nPlease answer with A, B, or C\n"), 'cyan'))
         print(colored(("A: 500 B: 2500 C: 6800"), 'cyan'))
         answer7 = input("\nPlease answer here:\n")
 
@@ -272,6 +277,7 @@ def quest_8():
         print(colored(("\nQ8."), 'cyan'))
         print(colored((
             "How many earthquakes are there in Japan every year?"), 'cyan'))
+        print(colored(("\nPlease answer with A, B, or C\n"), 'cyan'))
         print(colored(("A: 675 B: 350, C: 1500"), 'cyan'))
 
         answer8 = input("\nPlease answer here:\n")
@@ -308,6 +314,7 @@ def quest_9():
         print(colored(("\nQ9."), 'cyan'))
         print(colored(
             ("What do you get when a train is delayed in Japan?"), 'cyan'))
+        print(colored(("\nPlease answer with A, B, or C\n"), 'cyan'))
         print(colored(("\nA: A sugary snack on arrival"), 'cyan'))
         print(colored((
             "\nB: A certificate to notify your employer"), 'cyan'))
@@ -347,6 +354,7 @@ def quest_10():
         print(colored((
             "\nQ10.\nWhich of the following is the ruler of Japan have?"
         ), 'cyan'))
+        print(colored(("\nPlease answer with A, B, or C\n"), 'cyan'))
         print(colored((
             "A:President"
         ), 'cyan'))
