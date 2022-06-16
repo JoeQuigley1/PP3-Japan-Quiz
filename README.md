@@ -1,25 +1,3 @@
-
-## Reminders
-
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
-
-## Creating the Heroku app
-
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-
-
 Live site is here - https://japan-quiz.herokuapp.com/
 
 # Japan Quiz
@@ -71,33 +49,49 @@ Japan Quiz is a console  based application. Therefore I did not intergrate any g
 # Existing Features
 !!! Need to add screenshots!
 ## Game menu
+![Game Menu](docs/feature-screenshots/startup-screen.png)
 The game menu has 3 options for the user.
 + Play the game
 + View the scoreboard
 + Quit
 
 ### Play game 
- 
+![Play Game](docs/feature-screenshots/request-usernam.png)
+&nbsp; 
+ + Requests a username
+ + Checks if the username is valid.
+![Checking username](docs/feature-screenshots/checking-username.png)
  + Store a username in google sheets.
- + Do a quiz about Japan.
+ + Starts a quiz about Japan.
+![Quiz](docs/feature-screenshots/questions.png)
  + Cycle through 10 questions about Japan.
 
 
  ### View the scoreboard
 
 + Displays the scoreboard which consists of the username and score.
+![Scoreboard](docs/feature-screenshots/scoreboard.png)
 
 ### Quit
 
 + This gives the user an option to leave the game.
 + It contains a thank you message.
+![Quit](docs/feature-screenshots/quit-option.png)
 
 ## End Game Menu
 The end game menu has a similar menu to the Pregame menu except it offers a feedback choice.
+![End Game Menu](docs/feature-screenshots/end-menu.png)
 
 ### Feedback
  + Give a rating out of 10 on the quiz.
  + Comment on the quiz with a max of 200 characters.
+![Feedback](docs/feature-screenshots/feedback.png)
+
+
+## Validation
+I used some validation to check the username and the questions were asked correctly
+
+[Invalid data](docs/feature-screenshots/invalid-data.png)
 
 # Fututre Features
 
