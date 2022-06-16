@@ -1,12 +1,39 @@
-Live site is here - https://japan-quiz.herokuapp.com/
+# [Japan Quiz](https://japan-quiz.herokuapp.com/ "Japan Quiz")
 
-# Japan Quiz
 ![App](docs/feature-screenshots/responsive-img.png)
 
 I thought it would be interesting to do a quiz on Japan. I spent over 4 years living and working in Japan, between Tokyo and Hiroshima. It is a country that will always be special to me. Making a quiz about a place I love, while learning how to code (something I am becoming passionate about) has been a pleasure. 
 
 
 # Table of Contents
++ [UX](#ux "UX")
+    + [User Goals](#user-goals "User Goals")
+    + [Audience](#audience "Auidence")
+    + [User Stoies](#user-stories "User Stories")
+    + [Site Owner's Goals](#site-owners-goals "Site Owner's Goals")
+    + [Requirements](#requirements)
+    + [Design](#design)
++ [Existing Features](#existing-features)
+    + [Game menu](#game-menu)
+    + [Play Game Feature](#play-game-feature)
+    + [View the scoreboard](#view-the-scoreboard)
+    + [Quit](#quit)
+    + [End Game Menu](#end-game-menu)
+    + [Validation](#validation) 
+    + [Feedback](#feedback)
++ [Futute Features](#fututre-features)
++ [Bugs](#bugs)
+    + [Resolved Bugs](#resolved-bugs)
+    + [Unresolved Bugs](#unresolved-bugs)
++ [Testing](#testing)
++ [Technologies Used](#technologies-used)
+    + [Languages](#languages)
+    + [Libraries and Frameworks](#libraries-and-frameworks)
+    + [Data Storage](#data-storage)
++ [Deployment](#deployment)
++ [Credits](#credits)
+
+
 
 # The Goal for this project
 
@@ -36,7 +63,7 @@ I thought it would be interesting to do a quiz on Japan. I spent over 4 years li
 + Easy to play and understand
 + Should use libraries/API and be deployed to a cloud-based platform. 
 
-# Design
+## Design
 Japan Quiz is a console  based application. Therefore I did not intergrate any graphic design. Included are the following:
 
 + Flowchart which shows the design process before being implement.
@@ -44,10 +71,10 @@ Japan Quiz is a console  based application. Therefore I did not intergrate any g
 
 ![Flowchart](docs/feature-screenshots/flowchart-p3.png)
 
-
+[Back to Top](#table-of-contents)
 
 # Existing Features
-!!! Need to add screenshots!
+
 ## Game menu
 
 ![Game Menu](docs/feature-screenshots/startup-screen.png)
@@ -57,7 +84,7 @@ Japan Quiz is a console  based application. Therefore I did not intergrate any g
     + View the scoreboard
     + Quit
 
-### Play game 
+## Play Game Feature
 
 ![Play Game](docs/feature-screenshots/request-usernam.png)
 
@@ -67,6 +94,8 @@ Japan Quiz is a console  based application. Therefore I did not intergrate any g
 
 
 ![Checking username](docs/feature-screenshots/checking-username.png)
+
+
  + Store a username in google sheets.
  + Starts a quiz about Japan.
 
@@ -75,31 +104,41 @@ Japan Quiz is a console  based application. Therefore I did not intergrate any g
  + Cycle through 10 questions about Japan.
 
 
- ### View the scoreboard
+ #### View the scoreboard
 
 + Displays the scoreboard which consists of the username and score.
+
+
 ![Scoreboard](docs/feature-screenshots/scoreboard.png)
 
-### Quit
+## Quit
 
 + This gives the user an option to leave the game.
 + It contains a thank you message.
+
+
 ![Quit](docs/feature-screenshots/quit-option.png)
 
 ## End Game Menu
 The end game menu has a similar menu to the Pregame menu except it offers a feedback choice.
+
+
 ![End Game Menu](docs/feature-screenshots/end-menu.png)
 
 ### Feedback
  + Give a rating out of 10 on the quiz.
  + Comment on the quiz with a max of 200 characters.
+
+ 
 ![Feedback](docs/feature-screenshots/feedback.png)
 
 
 ## Validation
 I used some validation to check the username and the questions were asked correctly
 
-[Invalid data](docs/feature-screenshots/invalid-data.png)
+![Invalid data](docs/feature-screenshots/invalid-data.png)
+
+[Back to Top](#table-of-contents)
 
 # Fututre Features
 
@@ -122,6 +161,7 @@ I used some validation to check the username and the questions were asked correc
 
 ![Run file Validation](docs/testing/PEP8-Validation-run.png)
 
+[Back to Top](#table-of-contents)
 
 # Bugs
 
@@ -138,7 +178,8 @@ I used some validation to check the username and the questions were asked correc
 
 The project is designed to work on a pc console. 
 
-    
+[Back to Top](#table-of-contents)
+
 # Technologies Used 
 
 ## Languages 
@@ -148,6 +189,8 @@ The project is designed to work on a pc console.
 + [JavaScript](http://en.wikipedia.org/wiki/JavaScript "JavaScript") - Provided in the Code Institute template
 + [Python](https://en.wikipedia.org/wiki/Python_(programming_language) "Python")
 
+
+## Libraries and Frameworks
 Python libraries and api used
 - [Google auth](https://google-auth.readthedocs.io/en/master/index.html)
 - [Pprint](https://docs.python.org/3/library/pprint.html)
@@ -164,6 +207,8 @@ The scoreboard which contains a username and their score is stored in Google She
 
 - [Google Drive API](https://developers.google.com/drive/api)
 - [Google Sheet API](https://developers.google.com/sheets/api)
+
+[Back to Top](#table-of-contents)
 
 # Deployment
 After finishing the majority of the project I deployed the site on Heroku with it linked to GitHub.
@@ -184,7 +229,8 @@ After finishing the majority of the project I deployed the site on Heroku with i
     + When the correct repository is found click the connect button.
     + Finally using the branch as master enable automatic deploys.
 
- 
+[Back to Top](#table-of-contents)
+
 # Credits 
 For Inspirations relating to code, help and advice.
 
@@ -198,7 +244,7 @@ For Inspirations relating to code, help and advice.
 
 For help with Content.
 
-+ Again as mentioned above my mentor Martina has been a fantastic help with understanding any issues and helping me in a friendly manner.
++ Again as mentioned above my mentor Martina has been so friendly and a fantastic help with understanding any issues.
 
 + The facts about Japan came from various media sources and from my own anecdotal knowledge of the country and culture. 
 
@@ -207,3 +253,5 @@ For help with Content.
 + [RickShawTravel](https://www.rickshawtravel.co.uk/blog/10-fun-facts-japan/)
 + [BuzFeed](https://www.buzzfeed.com/eviecarrick/cool-facts-about-japan)
 + [Interac](https://interacnetwork.com/fax-machines-in-japan-how-to-use-them/#:~:text=You%20might%20be%20thinking%2C%20%E2%80%9Cdo,won't%20let%20them%20go!)
+
+[Back to Top](#table-of-contents)
