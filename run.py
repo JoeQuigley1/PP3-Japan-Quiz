@@ -194,8 +194,8 @@ def main():
 # The quiz input doesnt work on mobile
 
 
-print(colored(("Welcome to my Japan Quiz"), 'magenta'))
-print(colored(("Let's get started!\n"), 'magenta'))
+print(colored(("Welcome to my Japan Quiz"), 'yellow'))
+print(colored(("Let's get started!\n"), 'yellow'))
 print(colored(("Please enter one of the following options: \n"), 'cyan'))
 
 main()

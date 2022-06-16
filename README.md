@@ -68,7 +68,7 @@ Japan Quiz is a console  based application. Therefore I did not intergrate any g
 
 
 # Existing Features
-
+!!! Need to add screenshots!
 ## Game menu
 The game menu has 3 options for the user.
 + Play the game
@@ -165,6 +165,23 @@ The scoreboard which contains a username and their score is stored in Google She
 # Deployment
 After finishing the majority of the project I deployed the site on Heroku with it linked to GitHub.
 
++ The steps to deployment are as follows:
+    + Log into Heroku
+    + Create a new app
+    + Navigate to settings
+    +  Add the following KEY/VALUE pairs:
+        + CREDS and copy and paste the creds.json file
+        + PORT and 8000
+    + Add the buildpacks in the following order:
+        + Python
+        + node.js
+    + Navigate to the deploy menu
+    + Connect the app to GitHub using the GitHub connection option
+    + Search for the repository in GitHub
+    + When the correct repository is found click the connect button.
+    + Finally using the branch as master enable automatic deploys.
+
+ 
 # Credits 
 For Inspirations relating to code, help and advice.
 
