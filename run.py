@@ -25,7 +25,6 @@ def game_menu():
     Give the user options to initiate the game, quit
     or view the scoreboard
     """
-    # Options for the user to choose from.
     print("If you want to play the game, press: 1")
     print("If you want to view the scoreboard, press: 2")
     print("If you want to quit, press: 3 \n")
@@ -100,7 +99,7 @@ def update_scoreboard(player_username):
     score_worksheet.append_row([player_username, score])
 
 
-def display_scoreboard():  # Change to display most recent in scoreboard
+def display_scoreboard():
     """
     Displays the  scoreboard before the player logs a username
     """
@@ -189,9 +188,6 @@ def main():
     game_menu()
     end_game_scoreboard()
     end_game_menu()
-
-
-# The quiz input doesnt work on mobile
 
 
 print(colored(("Welcome to my Japan Quiz"), 'yellow'))

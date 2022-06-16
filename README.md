@@ -8,7 +8,6 @@ I thought it would be interesting to do a quiz on Japan. I spent over 4 years li
 # Table of Contents
 + [UX](#ux "UX")
     + [User Goals](#user-goals "User Goals")
-    + [Audience](#audience "Auidence")
     + [User Stoies](#user-stories "User Stories")
     + [Site Owner's Goals](#site-owners-goals "Site Owner's Goals")
     + [Requirements](#requirements)
@@ -40,10 +39,9 @@ I thought it would be interesting to do a quiz on Japan. I spent over 4 years li
 # UX
 
 ## User Goals 
-+ To be amused by testing my facts and learn a variety of useful facts about Japan.
-
-## Audience:
-+ - This quiz is intended for anyone who would like to test or broaden their knowledge of Japan.
++ This quiz is intended for anyone who would like to test or broaden their knowledge of Japan.
++ The quiz should be fun and engaging.
++ The instructions should be clear.
 
 ## User stories
 
