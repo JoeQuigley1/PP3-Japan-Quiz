@@ -51,10 +51,11 @@ Japan Quiz is a console  based application. Therefore I did not intergrate any g
 ## Game menu
 
 ![Game Menu](docs/feature-screenshots/startup-screen.png)
-The game menu has 3 options for the user.
-+ Play the game
-+ View the scoreboard
-+ Quit
+
++ The game menu has 3 options for the user.
+    + Play the game
+    + View the scoreboard
+    + Quit
 
 ### Play game 
 
